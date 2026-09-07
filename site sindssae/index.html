@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet Corporativa | SINDSAAE</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Lado Esquerdo - Banner e Apresentação -->
+        <div class="brand-section">
+            <div class="brand-overlay"></div>
+            <div class="brand-content">
+                <div class="brand-logo-container">
+                    <div class="logo-badge">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <span class="brand-title">SINDSAAE</span>
+                </div>
+                <h2>Portal do Servidor &amp; Colaborador</h2>
+                <p>Acesse a intranet institucional para informações, documentos, solicitações de benefícios e comunicação interna.</p>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Acesso seguro e criptografado</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        <span>Holerites e Gestão de Benefícios</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span>Comunicados e Notícias Internas</span>
+                    </div>
+                </div>
+
+                <div class="brand-footer">
+                    <p>&copy; 2026 SINDSAAE - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lado Direito - Formulário de Login -->
+        <div class="form-section">
+            <div class="form-wrapper">
+                <div class="mobile-logo">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h2>SINDSAAE</h2>
+                </div>
+                
+                <div class="form-header">
+                    <h1>Bem-vindo de volta!</h1>
+                    <p>Digite suas credenciais para acessar a Intranet</p>
+                </div>
+
+                <form id="loginForm" onsubmit="return handleSubmit(event)">
+                    <div class="input-group">
+                        <label for="username">CPF ou Matrícula</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-user input-icon"></i>
+                            <input type="text" id="username" name="username" placeholder="Digite seu CPF ou Matrícula" required autocomplete="username">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="label-container">
+                            <label for="password">Senha</label>
+                            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                        </div>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock input-icon"></i>
+                            <input type="password" id="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required autocomplete="current-password">
+                            <button type="button" class="toggle-password" onclick="togglePasswordVisibility()">
+                                <i class="fa-regular fa-eye" id="eyeIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <label class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <span class="checkmark"></span>
+                            Lembrar meu acesso
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <span>Entrar no Sistema</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <div class="divider">
+                        <span>ou acesse via</span>
+                    </div>
+
+                    <div class="sso-buttons">
+                        <button type="button" class="btn-sso">
+                            <i class="fa-brands fa-windows"></i>
+                            Microsoft 365
+                        </button>
+                        <button type="button" class="btn-sso">
+                            <i class="fa-solid fa-id-card"></i>
+                            Gov.br
+                        </button>
+                    </div>
+                </form>
+
+                <div class="support-info">
+                    <p>Precisa de ajuda? <a href="#">Contate o suporte TI</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('password');
+            const eyeIcon = document.getElementById('eyeIcon');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.classList.remove('fa-eye');
+                eyeIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye');
+            }
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = document.querySelector('.btn-submit');
+            btn.classList.add('loading');
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Autenticando...';
+            
+            setTimeout(() => {
+                alert('Login efetuado com sucesso! Redirecionando para a Intranet...');
+                btn.classList.remove('loading');
+                btn.innerHTML = '<span>Entrar no Sistema</span><i class="fa-solid fa-arrow-right"></i>';
+            }, 1500);
+            return false;
+        }
+    </script>
+</body>
+</html>
