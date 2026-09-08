@@ -11,6 +11,7 @@ public class ex_1 {
         else if(numero < 0){
             System.out.println("O numero " + numero + ", que vc digitou é NEGATIVO");
         }
+        entrada.close();
     }
 
 }
