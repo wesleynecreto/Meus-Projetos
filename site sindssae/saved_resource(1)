@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>SINDSAAE</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@100;600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">	
+		
+	
+		  <style>
+  .tabela-responsiva {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .tabela-responsiva th,
+  .tabela-responsiva td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .tabela-responsiva th {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .tabela-responsiva tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  .tabela-responsiva tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+</style>
+    
+<style>
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 48px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+.arrow:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+.left-arrow {
+  left: 20px;
+}
+.right-arrow {
+  right: 20px;
+}
+.video-style {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 2
+  0px;
+  border: 4px solid white;
+  background-color: black;
+}
+</style>
+<!-- ESTILO DO POPUP -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .popup-box {
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    max-width: 90%;
+    width: 360px;
+    position: relative;
+    animation: surgir 0.4s ease-out;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff3cd; /* amarelo suave */
+    color: #212529;
+  }
+
+  .fechar-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #212529;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .fechar-popup:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes surgir {
+    from { transform: scale(5.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  } 
+</style>
+
+ <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* proporção 16:9 */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+    }
+
+    .video-container iframe,
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  
+  
+  <!-- texto centralizado-->
+
+  <style>
+    .destaque {
+      display: flex;
+      align-items: center;
+      background-color: #ffe600;
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 40px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .destaque i {
+      margin-right: 15px;
+      color: #ff0000;
+      font-size: 30px;
+    }
+  </style>
+
+ <style>
+.destaque {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #ffe600;
+      padding: 20px 30px;
+      border-radius: 12px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      max-width: 600px;
+    }
+
+    .destaque i {
+      margin-right: 15px;
+      color: #ff0000;
+      font-size: 30px;
+    }
+
+    .texto {
+      flex: 1;
+    }
+  </style>
+
+</head>
+
+
+
+    <body>
+	
+
+	<!-- POPUP 
+<div id="popupAviso" class="popup-overlay">
+  <div class="popup-box text-center text-dark" style="background-image: url('URL_MARCA_TEXTO'); background-size: cover; background-position: center;">
+    
+    <!-- Alfinete vermelho no topo 
+    <img src="https://cdn.pixabay.com/photo/2013/07/12/12/46/drawing-pin-146214_640.png" alt="Alfinete vermelho" style="width: 40px; position: absolute; top: 10px; left: calc(50% - 20px); z-index: 10;">
+
+    <button class="fechar-popup" onclick="document.getElementById('popupAviso').style.display='none'">
+      ✋ <span style="font-size: 16px; margin-left: 5px;">Fechar aba</span>
+    </button>
+
+    <div style="height: 35px;"></div>
+
+    <div style="font-size: 40px; margin-bottom: 10px;">📢</div>
+	
+	 <h5 class="mb-3 fs-4">Aviso Importante</h5>
+    <p class="fs-5"> Assembleia geral dia</p> 
+	
+ <div class="table-responsive">
+    <table class="table table-bordered table-striped text-center">
+	
+      <thead class="table-primary">
+        <tr>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><h6 class="text-center mb-3">ECA<br> Dia 14/04  </h6></td>
+          <td><h6 class="text-center mb-3">ETE Central<br> Dia 15/04 </h6></td>
+        </tr>
+        <tr>
+          <td><h6 class="text-center mb-3"> Primeira chamada <br>11h30 </h6></td>
+          <td><h6 class="text-center mb-3"> Primeira chamada<br> 11h30 </h6></td>
+        </tr>
+        <tr>
+          <td><h6 class="text-center mb-3">  Segunda chamada<br> 12h </h6></td>
+          <td><h6 class="text-center mb-3">Segunda chamada<br> 12h </h6></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+</div>
+	 -->
+	
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v22.0"></script>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid topbar bg-dark d-none d-lg-block">
+                <div class="container px-0">
+                    <div class="topbar-top d-flex justify-content-between flex-lg-wrap">
+                        <div class="top-info flex-grow-0">
+                            <span class="rounded-circle btn-sm-square bg-primary me-2">
+                                <img src="img/logo.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+                            </span>
+                            <div class="pe-2 me-3 border-end border-white d-flex align-items-center">
+                                <p class="mb-0 text-white fs-6 fw-normal"> Bem vindo ao SINDSAAE</p>
+								
+                            </div>
+                            <div class="overflow-hidden" style="width: 735px;">
+                                <div id="note" class="ps-2">
+                                    
+                                    <p class="text-white mb-0 link-hover"> <STRONG> Campanha Salarial. Juntos somos mais fortes !!!</STRONG></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-link flex-lg-wrap">
+                            <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> <span class="text-body"></span></i>
+                            <div class="d-flex icon">
+                                <p class="mb-0 text-white me-2"></p>
+                                <a href="" class="me-2"><i class="fab fa-facebook-f text-body link-hover"></i></a>
+                                <a href="" class="me-2"><i class="fab fa-twitter text-body link-hover"></i></a>
+                                <a href="" class="me-2"><i class="fab fa-instagram text-body link-hover"></i></a>
+                                <a href="" class="me-2"><i class="fab fa-youtube text-body link-hover"></i></a>
+                                <a href="" class="me-2"><i class="fab fa-linkedin-in text-body link-hover"></i></a>
+                                <a href="" class="me-2"><i class="fab fa-skype text-body link-hover"></i></a>
+                                <a href="" class=""><i class="fab fa-pinterest-p text-body link-hover"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="index.html" class="navbar-brand mt-3">
+                            <p class="text-primary display-6 mb-2" style="line-height: 0;"></p>
+                            <small class="text-body fw-normal" style="letter-spacing: 12px;"></small>
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+								<a href="img/inscrição.pdf" class="nav-item nav-link">Seja sócio</a>
+								<a href="diretoria.html" class="nav-item nav-link">Diretoria</a>
+                                <a href="destaque.html" class="nav-item nav-link">Informativo</a>
+								<a href="juridico.html" class="nav-item nav-link">Jurídico</a>
+                                <a href="404.html" class="nav-item nav-link"></a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blogue</a>
+                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                        <a href="lideranca.html" class="dropdown-item"> Liderança</a>
+                                        <a href="mobiliza.html" class="dropdown-item"> Mobilização</a>                                       
+                                        <a href="companheiro.html" class="dropdown-item">Companheirismo </a>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/+551239527981?text=%22%C3%89%20sempre%20um%20prazer%20falar%20com%20voc%C3%AA!%22" class="nav-item nav-link">Contato</a>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+        <!-- Features Start -->
+    
+        </div>
+		
+        <!-- Features End -->
+		
+        <!-- Modal Search End -->
+ <!--
+<section id="home" class="section">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="img/logo-frente.jpg" alt="" width="1100" height="200">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/logo-frente2.jpg" alt="" width="1100 height="200">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/BANERSIN12.jpg" alt="" width="1100 height="200">
+                </div>				
+            </div>           
+        </section>
+-->
+        <!-- Features Start -->
+   
+        <!-- Features End -->
+
+
+        <!-- Main Post Section Start -->
+		
+		<div class="latest-news-carousel owl-carousel">
+				
+                    <div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							<a href="lideranca.html" class="h4">
+                                <img src="img/andre1.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+                            <div class="d-flex flex-column p-4">
+							
+                                <a href="lideranca.html" class="h4">liderança</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							<a href="mobiliza.html" class="h4">
+                                <img src="img/saae2.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+                            <div class="d-flex flex-column p-4">
+                                <a href="mobiliza.html" class="h4">Mobilização</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                  
+                   
+					 <div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							 <a href="companheiro.html" class="h4 ">
+                                <img src="img/saae5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+                            <div class="d-flex flex-column p-4">
+                                <a href="companheiro.html" class="h4 ">Companheirismo</a>
+                            </div>
+					     </div>
+						</div>			
+					   </div>	
+		
+		
+        
+
+
+<div class="container-fluid py-5">
+		
+            <div class="container py-5">
+                <div class="row g-4">
+				
+                    <div class="col-lg-7 col-xl-8 mt-0">	
+					<div class="position-relative overflow-hidden rounded">
+					<div class="border-bottom py-3">
+                <!--     <a  class="display-4 text-dark mb-0 link-hover">O</a>				
+					 -->
+					  <div class="bg-light p-4 rounded">
+					  <h2 align="center"; style="color: #c0392b;">"Para todos aqueles que se dedicam, se esforçam e enfrentam leões todos os dias em busca de uma vida melhor, um feliz Dia do Trabalho!"</h2>
+					 <div align="center">
+					<img src="img/diatrabalho.jpg" alt="Primeiro de Maio - Dia do Trabalhador" style="max-width: 100%; width: 400px; border-radius: 8px; flex-shrink: 0;">
+					<div style="flex: 1; min-width: 250px;">
+    
+    <p style="font-size: 1.1em; line-height: 1.6;">
+	<div align="justify">
+    	"Amanhã, dia 1 de Maio, marca uma data extremamente simbólica para o trabalhador, foi nesse dia que um grupo de trabalhadores e trabalhadoras, enfrentaram seus patrões e iniciaram a senda das lutas por melhores salários e condições de trabalho. Essa é uma data que jamais poderá ser esquecida, portanto, no dia de amanhã, 1 de Maio, o SindSaae estará presente a um evento que será realizado na Praça do Rosário, a partir das 09:00h da manhã, em comemoração a esse dia e, também, para que pautas atuais sejam colocadas para a população. Portanto, convidamos a todos e a todas a participarem desse importantíssimo evento. Até lá.
+</div>
+
+<div align="center">
+<h3 style="color: #c0392b;">
+</h3>
+	 <h5>Juntos somos mais fortes, juntos somos mais respeitados.</h5>
+	  </div>
+   </div>
+   </p>
+  </div>
+</div>
+					<hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 
+					 
+					 
+					  <div class="bg-light p-4 rounded">
+					 <div align="center">
+					
+					<h2> ESTAMOS DE OLHO</h2>
+
+  <div class="video-container">
+    <iframe 
+       src="https://www.youtube.com/embed/rNzdSA23M-M" 
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <br>
+<div align="justify">Pois é, galera, esse vídeo é uma prova de que se o povo se mobilizar, os traíras, vão se lembrar de suas promessas de campanha.
+<strong> "Pressão"</strong>, foi o que ele disse, pois é isso mesmo que tem que ser feito, pressiona-los, sessão após sessão, pressioná-los quando tiverem projetos de lei contrários ao povo, como o caso dos Rappers, que estão sendo discriminados, com uma lei sugerida por um vereador e aprovada pela Câmara, o povo, ao votar nessas pessoas, deu-lhes poder para ferrar o próprio povo. Sim, pressiona-los sessão após sessão, porque com o prefeito tendo 11 dos 13 vereadores em suas mãos, ele se torna um reizinho, que fará de Jacareí seu pequeno reino e, como num jardim de infância, brincará de ditador, com anuência da Casa que deveria equilibrar as coisas.
+</div>
+<br>
+<div align="center"> Querem atender ao "rei", sem ter incômodo nenhum, nos ferrar, e depois irem para suas casas brindarem com seus copos de whisky, o "sucesso" de sua agenda maléfica.<br><br>
+ A democracia foi sequestrada em Jacareí.
+ </div>
+					 </div>
+					 </div>
+					<hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 
+					 
+					 
+					  <div align="center">
+<img src="img/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br><br>
+	
+</div>
+ 
+			    	  
+					 
+					 
+					 
+					 <h5><strong> Uma verdadeira afronta aos Servidores Públicos aconteceu ontem na Câmara Municipal</strong></h5> <br>
+					 <div align="justify">
+                     <img src="img/camara16.jpg" class="img-fluid rounded img-zoomin w-100" alt="">					 
+					 <br>
+					 <br> O Projeto de Lei que propunha o aumento nos vencimentos — já rejeitado por unanimidade pela própria categoria — foi levado à votação sem qualquer consideração pelo apelo dos trabalhadores.
+					 <br> Mesmo com forte mobilização dos Servidores, que clamavam por diálogo e mais tempo para negociação, os vereadores submissos ao prefeito Celso Florêncio ignoraram completamente o pedido.
+					 <br> Agiram como meros fantoches, obedecendo cegamente aos interesses do Executivo, ao invés de cumprirem seu dever com a população que os elegeu.
+                     <br>Essa manobra política escancarada mostra o total desrespeito à vontade da categoria e escancara o teatro que é essa “representação” política local. Ao atropelar o processo e fechar as portas para uma possível melhora nos índices propostos, a Câmara deixou claro de que lado está — não é o do povo, nem dos servidores.
+
+					 </div>
+					 
+					<hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 
+					 
+					 <!--
+					 <div class="bg-light p-4 rounded">
+					 <div align="center">
+					
+					<img src="img/dia16.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+
+					 </div>
+					 </div>
+					 <hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 
+					 -->
+					 
+					 
+					 <h1>Aviso importante!</h1>
+
+  <div class="video-container">
+    <video controls>
+      <source src="img/vcampanha2025.mp4" type="video/mp4">
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+  </div>
+		              <hr>
+					<hr style="border: 3px solid black;">	 
+					  <hr>			 
+					  
+					  <!--
+					 
+					 <div align="center">
+<img src="img/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br><br>
+	<h3><mark> <strong>Campanha salarial 2025</strong></mark></h3>
+</div>
+<strong><p align="justify">
+Após a assembleia do dia 02/04, onde a proposta do prefeito foi 
+rejeitada, estamos dando continuidade às negociações. Vamos 
+estar realizando assembleias na ECA e na ETE Central<br><br>
+
+  Nas assembleias estaremos passando os detalhes da Campanha 
+Salarial, onde será apresentada proposta de ação que poderemos 
+estar tomando para enfrentarmos a indiferença da administração, e 
+falando também sobre as novas diretrizes que determinarão nossas 
+assembleias futuras, o que, a categoria, por ser soberana, desde 
+que participe, decidirá
+</p>
+
+<!--
+<div class="container my-4">
+  <h2 class="text-center mb-3"><strong> Datas / Horários</strong></h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped text-center">
+	
+      <thead class="table-primary">
+        <tr>
+          <th><h3 class="text-center mb-3"><strong> ECA </strong></h3></th>
+          <th><h3 class="text-center mb-3"><strong>ETE Central</strong></h3> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><h4 class="text-center mb-3"><strong> Dia 14/04  </strong></h4></td>
+          <td><h4 class="text-center mb-3"><strong> Dia 15/04 </strong></h4></td>
+        </tr>
+        <tr>
+          <td><h5 class="text-center mb-3"><strong> Primeira chamada <br>11h30 </strong></h5></td>
+          <td><h5 class="text-center mb-3"><strong> Primeira chamada<br> 11h30 </strong></h5></td>
+        </tr>
+        <tr>
+          <td><h5 class="text-center mb-3"><strong>  Segunda chamada<br> 12h </strong></h5></td>
+          <td><h5 class="text-center mb-3"><strong>Segunda chamada<br> 12h </strong></h5></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+ <h5 class="text-center mb-3">
+ <mark><strong> Juntos, somos mais fortes!</strong> </mark>
+ <br><br>
+ <mark><strong>Juntos, somos mais respeitados!</strong></mark>
+</h5>
+
+</strong>
+			     		 
+					
+					 <hr>
+					 <hr style="border: 3px solid black;">
+					 <hr>
+			 		
+  <div class="bg-light p-4 rounded">
+					 <div align="justify">
+
+					 <img src="img/campsal2025b.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+					 </div>
+					 </div>
+					 
+					 
+					 <hr>
+					<hr style="border: 3px solid black;">
+					<hr>
+					-->
+					
+					 <div class="bg-light p-4 rounded">
+					 <div align="justify">
+
+
+<div align="center">
+<img src="img/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br><br>
+	<h3><mark> Campanha salarial 2025</mark></h3>
+</div>
+					 O SINDSAAE iniciou a campanha salarial 2025, nos dias 24,25 e 26/02/2025, 
+					 fez as assembleias nos setores do SAAE, onde foram passados os índices de reajuste salarial,
+					 reajuste do Vale Alimentação (VA) e Vale Refeição (VR), que foram aprovados por unanimidade,
+					 pelos Trabalhadores(as) participantes das assembleias.<br><br>
+					 
+					 São:<br>
+<mark>1)</mark>	Reposição da Inflação de 4,50% (quatro e meio por cento) estimada de Janeiro de 2024 a Fevereiro de 2025.<br><br>
+<mark>2)</mark>	Melhoria no padrão salarial de 3,50% ( três e meio por cento).<br><br>
+<mark>3)</mark>	 2,00% (dois por cento) amortização das perdas acumuladas dos últimos quatro anos do governo Isaias (12,00%), 
+com possibilidade de no decorrer do ano, negociar mais algum valor.<br><br>
+<mark>4)</mark>	Fim do Confisco dos Aposentados e Pensionistas de 14,00% (quatorze por cento) do que recebem acima de 3 salários mínimos.<br><br>  
+</strong><br> 
+<div align="justify">
+Ass:. A Diretoria
+    </div>
+					 </div>
+					 </div>
+					 <hr>
+					<hr style="border: 3px solid black;">
+					<hr>
+					
+					 <div class="bg-light p-4 rounded">
+					 <div align="justify">
+<strong>  
+
+
+As assembleias serão realizadas em dois locais distintos para assegurar ampla participação: <br><br>
+<mark>ECA / ETA: dia 24/02 as 7h30</mark> <br> <br>
+
+<mark>ETE / Pq dos Sinos: dia 25/02 as 7h30</mark> <br> <br>
+
+<mark>Sede: dia 26/02 as 10h</mark>
+<br>
+ <br>
+ "Juntos somos mais fortes, aqui todo mundo joga e não tem banco de reserva",
+ reforça a importância da união e da participação ativa de todos os trabalhadores.
+ A mobilização coletiva é o que fortalece a categoria e permite avanços significativos nas negociações salariais e nas condições de trabalho. <br>
+A presença de cada trabalhador é fundamental para garantir que as demandas da categoria sejam ouvidas e atendidas.
+ A participação nas assembleias é uma oportunidade para discutir propostas, alinhar estratégias e fortalecer a representação sindical. <br>
+Portanto, é essencial que todos compareçam e se engajem nessa luta coletiva por melhores condições de trabalho e um futuro mais justo para a categoria.<br>
+					 </strong><br>
+					 
+					 </div>
+					 </div>
+									
+					<hr>
+					<hr style="border: 3px solid black;">
+					<hr>
+					
+				
+  <div class="bg-light p-4 rounded">
+
+					 <div align="justify">
+<strong> 
+ <div align="center">
+	<h3><mark>Formação política </mark></h3>
+</div>
+
+	Nesta Quinta-Feira, dia 13, tivemos mais uma reunião de nossa diretoria que, entre
+outras pautas, discutiu sobre a nossa Campanha Salarial, já visando a conversa que
+teremos com a diretoria do Sindicato dos Trabalhadores Públicos Municipais de Jacareí (STPMJ),
+ para chegarmos a um consenso sobre os números que estarão sendo levados para o Prefeito.<br>
+ Ainda nessa oportunidade, iniciamos a exibição de cursos para os diretores presentes,
+ que têm por finalidade oferecer aos  companheiros e companheiras da diretoria a oportunidade de estarem se familiarizando com as questões, sindicais,
+políticas e econômicas de nosso país. Assim como também estaremos fazendo com os trabalhadores no nosso Aprendendo no SindSaae, 
+que começa nesta terça-feira, em nossa sede, das 12:00 às 12:50h <mark>(acontecerá todas as terças e quintas feiras)</mark>
+Aguardamos vocês 🗣👤👥
+</strong>
+		 </div>	                    
+		 	<br>				
+             <img src="img/curso.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+			    </div>				
+						</div>					
+					       </div>					                       
+                    </div>
+					
+					
+					
+                    <div class="col-lg-5 col-xl-4">
+                       <div class="bg-light rounded p-4 pt-0">
+                            <div class="row g-4">
+							
+							
+							<!-- Mostrador de Vídeos INÍCIO -->
+<!-- Mostrador de Vídeos INÍCIO -->
+<div class="bg-primary py-3">
+  <h2 class="text-white text-center mb-4">Assista e fique por dentro</h2>
+  <div class="position-relative d-flex flex-column align-items-center">
+    <div class="arrow left-arrow" id="prevBtn">&#8592;</div>
+    <iframe id="youtubePlayer" class="video-style" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="arrow right-arrow" id="nextBtn">&#8594;</div>
+    <div id="videoTitle" class="text-white mt-3 fs-5 text-center"></div>
+  </div>
+</div>
+<!-- Mostrador de Vídeos FIM -->
+                                
+                                <div class="col-12">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="h4 mb-2">INDICE</a>
+										<!--
+                                        <p class="fs-5 mb-0"><i class="fa fa-clock"> 06 minute read</i> </p>
+                                        <p class="fs-5 mb-0"><i class="fa fa-eye"> 3.5k Views</i></p>
+										-->
+                                    </div>
+                                </div>
+								
+								 <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											<a href="https://web.facebook.com/profile.php?id=61572926857768"  class="h6">
+                                                
+												<img src="img/vecteezy_3d-facebook-logo-icon-blue-color-png_9995711.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                           </a>
+										   </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+											   <a href="https://web.facebook.com/profile.php?id=61572926857768"  class="h6">SINDSAAE</a>
+											   <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											<a href="https://wa.me/+5512988840202?text=%22%C3%89%20sempre%20um%20prazer%20falar%20com%20voc%C3%AA!%22" class="h6">
+                                                <img src="img/whatsind.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                          </a>
+										  </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+											   <a href="https://wa.me/+5512988840202?text=%22%C3%89%20sempre%20um%20prazer%20falar%20com%20voc%C3%AA!%22" class="h6">WhatsApp</a>
+											   <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											<a href="img/ESTATUTO-SINDSAAE.pdf"" class="h6">
+                                                <img src="img/estatuto.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                          </a>
+										  </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+											   <a href="img/ESTATUTO-SINDSAAE.pdf"" class="h6">Estatuto</a>
+											   <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											<a href="historia.html" class="h6">
+                                                <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                          </a>
+										  </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="historia.html" class="h6">História do Sindicato</a>
+                                                 <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											<a href="img/listamedico.html" class="h6">
+                                                <img src="img/convenio.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+												</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="img/listamedico.html" class="h6">Convênios (serviços médicos)</a>
+                                        <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											 <a href="img/Estatuto Atualizado L.C.64-23.10.07.pdf" class="h6">
+                                                <img src="img/estatuto.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+												</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="img/Estatuto Atualizado L.C.64-23.10.07.pdf" class="h6">Estatuto dos Servidores Públicos
+Municipais de Jacareí ( Lei Complementar n°13 - 07/10/199 )</a>
+                                                  <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											
+											      <a href="juridico.html">
+                                                <img src="img/juridico.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+												</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="juridico.html" class="h6">Jurídico</a>
+                                                <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<hr>
+					<hr style="border: 3px solid black;">
+					<hr><hr>
+					<hr style="border: 3px solid black;">
+					<hr>
+								
+								<div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="img/dinheiro.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="campanha2024.html" class="h6">Campanha salarial 2024</a>
+                                                <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								
+								<div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="img/revoga.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="revogaço.pdf" class="h6">Revogaço</a>
+                                                <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+															
+								<div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="img/fiquesocio.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="img/inscrição.pdf" class="h6">Filie se ao SINDSAAE</a>
+                                                <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+                                                
+												 
+												
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/pec66.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2"></p>
+                                                                <a href="pec66.html" class="h6">Fiquemos atentos Pec 66</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> </small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                        </div>
+								
+								
+                               
+                            </div>
+                       </div>
+                    
+        
+
+        
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>www.sindssae.com.br</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-2 border-white rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+		<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Carrossel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 5000); // Muda o slide a cada 5 segundos
+
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animação de fade-in para elementos quando entram na viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    });
+    </script>
+		
+    
+<script>
+  const videos = [
+    {
+      src: "https://www.youtube.com/embed/G1PSJYblfAc",
+  title: "Proposta de aumento indecente"
+    }, 
+   
+    {
+      src: "https://www.youtube.com/embed/ysHSt1eHeCM",
+      title: "SINDSAAE. não somos marionetes"
+    },
+    {
+      src: "https://www.youtube.com/embed/glk-23zCePw",
+      title: "SINDSSAE POR MELHORES SALÁRIOS"
+    },
+	
+	{
+      src: "https://www.youtube.com/embed/YEnH-X3cRzg",
+      title: "Aprendendo com o SINDSAAE"
+    },
+	
+	
+	
+   
+  ];
+
+  let current = 0;
+  const youtubePlayer = document.getElementById("youtubePlayer");
+  const videoTitle = document.getElementById("videoTitle");
+
+  function loadVideo(index) {
+    const video = videos[index];
+    youtubePlayer.src = video.src;
+    videoTitle.textContent = video.title;
+  }
+
+  function changeVideo(direction) {
+    current = (direction === "next")
+      ? (current + 1) % videos.length
+      : (current - 1 + videos.length) % videos.length;
+    loadVideo(current);
+  }
+
+  loadVideo(current);
+
+ 
+  let startX = null;
+  window.addEventListener("mousedown", (e) => startX = e.clientX);
+  window.addEventListener("mouseup", (e) => {
+    if (startX !== null) {
+      const deltaX = e.clientX - startX;
+      if (Math.abs(deltaX) > 50) changeVideo(deltaX > 0 ? "prev" : "next");
+      startX = null;
+    }
+  });
+
+  let touchStartX = null;
+  window.addEventListener("touchstart", (e) => touchStartX = e.touches[0].clientX);
+  window.addEventListener("touchend", (e) => {
+    const deltaX = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(deltaX) > 50) changeVideo(deltaX > 0 ? "prev" : "next");
+    touchStartX = null;
+  });
+
+  document.getElementById("prevBtn").addEventListener("click", () => changeVideo("prev"));
+  document.getElementById("nextBtn").addEventListener("click", () => changeVideo("next"));
+</script>
+
+
+</body>
+
+</html>

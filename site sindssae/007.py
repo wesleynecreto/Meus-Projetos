@@ -18,12 +18,12 @@ Você DEVE responder APENAS com um objeto JSON válido, sem tags markdown (não 
 Exemplo de resposta:
 {
   "index.html": "conteúdo html",
-  "style.css": "conteúdo css"
+  
 }
 """
 
 pergunta_usuario = (
-    "crie altere as página de login para a minha intranet seguindo fielmente o css encontrado na pagina https://www.sindsaae.org.br/ fazendo parecer uma extenção do site ja existente . "
+    "crie altere as página de login para a minha intranet seguindo fielmente o css encontrado na pasta fazendo parecer uma extenção do site ja existente . "
     "Preciso do código para o arquivo index.html, tanbem crie uma pagina ja logado e um banco de dados que confere os loguin  e para o arquivo style.css com  o tema do site https://www.sindsaae.org.br/."
 )
 
