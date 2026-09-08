@@ -1,0 +1,1016 @@
+
+/*** Spinner Start ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+/*** Spinner End ***/
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.fw-thin {
+    font-weight: 100;
+}
+
+.text-uppercase {
+    font-size: 14px;
+}
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.social-icons a {
+  font-size: 20px;       /* tamanho dos ícones */
+  padding: 0px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: white;           /* cor do ícone */
+  border-radius: 50%;     /* deixa circulares */
+  transition: 0.3s;
+}
+
+/* cores de fundo específicas */
+.social-icons a.fa-facebook  { background: #3B5998; }
+.social-icons a.fa-instagram { background: #E1306C; }
+.social-icons a.fa-youtube   { background: #FF0000; }
+
+/* efeito hover (quando passa o mouse) */
+.social-icons a:hover {
+  transform: scale(1.2);  /* aumenta um pouco */
+  opacity: 0.8;
+}
+/* seção do banner */
+<style>
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 100px;
+    overflow: hidden;
+}
+
+.banner {
+    width: 95%;
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner.ativo {
+    display: block;
+}
+
+</style>
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.link-hover {
+    transition: 0.5s;
+}
+
+.link-hover:hover {
+    color: var(--bs-primary) !important;
+}
+
+
+.img-zoomin {
+    transition: 0.5s;
+}
+
+.img-zoomin:hover {
+    transform: scale(1.1);
+}
+
+/*** Topbar Start ***/
+.sticky-top {
+    transition: 0.5s;
+    background: var(--bs-white);
+}
+
+.topbar {
+    padding: 10px 0;
+}
+
+.topbar .top-info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1400px) {
+    .sticky-top .top-link {
+        display: none;
+    }
+    
+}
+
+.topbar .top-link a {
+    font-size: medium;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+.topbar .top-link a small:hover {
+    color: var(--bs-secondary) !important;
+    transition: 0.5s;
+}
+
+.topbar .top-link a small:hover i {
+    color: var(--bs-primary) !important;
+}
+
+#note {
+    position: relative;
+    animation-timing-function: ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes noteAnimate {
+    from {left: -735px;}
+    to {left: 735px;}
+}
+
+/*** Topbar End ***/
+
+/*** Navbar Start ***/
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-weight: 400;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.sticky-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.sticky-top.bg-white .navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 1200px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        font-weight: 400;
+        font-family: 'Fredoka', sans-serif;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        border: 0;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-primary);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light) !important;
+    border-radius: 10px !important;
+    transition: .5s;
+    opacity: 1;
+}
+
+@media (min-width: 1200px) {
+    .navbar .navbar-collapse .border-top {
+        border-top: none !important;
+    }
+}
+
+#searchModal .modal-content {
+    background: rgba(255, 255, 255, .8);
+}
+/*** Navbar End ***/
+
+
+/*** Features Start ***/
+.features {
+    width: 100%;
+    background: linear-gradient(rgba(26, 125, 255, 0.5), rgba(255, 255, 255, 0.3)), url(../img/features-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*** Features End ***/
+
+
+/*** Top News Start ***/
+.news-2 h3 {
+    position: relative;
+}
+
+.news-2 h3::after {
+    content: "";
+    line-height: 1.3rem;
+    background: var(--bs-secondary);
+    position: absolute;
+    width: 68%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    right: 0;
+    opacity: 0.2;
+}
+/*** Top News End ***/
+
+
+/*** Latest News Start ***/
+.latest-news .latest-news-carousel.owl-carousel{
+    position: relative;
+}
+
+.latest-news .latest-news-carousel.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: -65px;
+    right: 70px;
+    font-size: 20px;
+    padding: 2px 20px;
+    transition: 0.5s;
+    margin-right: 10px;
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-dark);
+    border-radius: 20px;
+}
+
+.latest-news .latest-news-carousel.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: -65px;
+    right: 0;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 2px 20px;
+    transition: 0.5s;
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-dark);
+    border-radius: 20px;
+}
+
+.latest-news .latest-news-carousel.owl-carousel .owl-nav .owl-prev:hover,
+.latest-news .latest-news-carousel.owl-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    border-radius: 10px;
+}
+/*** Latest News End ***/
+
+
+/*** Whats New Start ***/
+.populer-news .whats-carousel.owl-carousel {
+    position: relative;
+}
+
+.populer-news .whats-carousel.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: -80px;
+    right: 70px;
+    font-size: 20px;
+    padding: 2px 20px;
+    transition: 0.5s;
+    margin-right: 10px;
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-dark);
+    border-radius: 20px;
+}
+
+.populer-news .whats-carousel.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 2px 20px;
+    transition: 0.5s;
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-dark);
+    border-radius: 20px;
+}
+
+.populer-news .whats-carousel.owl-carousel .owl-nav .owl-prev:hover,
+.populer-news .whats-carousel.owl-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    border-radius: 10px;
+}
+
+.populer-news .tab-class .nav-item a.active {
+    background: var(--bs-primary) !important;
+}
+
+.lifestyle .lifestyle-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.lifestyle .lifestyle-item img {
+    transition: 0.5s;
+}
+
+.lifestyle .lifestyle-item:hover img {
+    transform: scale(1.2);
+}
+
+.lifestyle .lifestyle-item .lifestyle-content {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+/*** Whats New End ***/
+
+
+/*** Banner Section start ***/
+.banner-2 {
+    position: relative;
+}
+
+.banner-content-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: linear-gradient(rgba(26, 125, 255, 0.7), rgba(255, 255, 255, 0.7));
+    z-index: 2;
+}
+/*** Banner Section End ***/
+
+
+/*** Footer Start ***/
+.footer button:hover {
+    background: var(--bs-white) !important;
+    color: var(--bs-primary) !important;
+}
+
+.footer .footer-item-1 .line-h {
+    line-height: 38px;
+}
+
+.footer .footer-item-1 a i {
+    transition: 0.5s;
+}
+
+.footer .footer-item-1 a:hover i {
+    color: var(--bs-primary) !important;
+}
+
+.footer .footer-item-3 a {
+    line-height: 38px;
+}
+
+.footer .footer-item-2 a {
+    transition: 0.5s;
+}
+
+.footer .footer-item-2 a:hover {
+    color: var(--bs-primary) !important;
+}
+
+.footer .footer-item-3 a {
+    transition: 0.5s;
+}
+
+.footer .footer-item-3 a:hover {
+    color: var(--bs-primary) !important;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+	
+
+}
+.embed{
+	position:relative;
+	width:100%;
+	height:100%;
+	padding-bottom:56.25%;
+}
+.embed {
+	position:100%;
+	width:100%;
+	height:100%;
+	border:none;
+	
+	
+}
+.popup-box {
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  max-width: 90%;
+  width: 360px;
+  position: relative;
+  animation: surgir 0.4s ease-out;
+  font-family: 'Roboto', sans-serif;
+
+  background-image: url('URL_MARCA_TEXTO');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform: rotate(-3deg); /* Inclinação aqui 👈 */
+}
+
+
+.megafone {
+  animation: vibrar 0.3s infinite;
+  color: #ff0000;
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+@keyframes vibrar {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.cubo3d {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  transform-style: preserve-3d;
+  animation: spin 10s infinite linear;
+  perspective: 1000px;
+}
+
+.cubo3d .face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border: 0px solid #fff;
+  opacity: 0.95;
+}
+
+.face.front  { transform: rotateY(  0deg) translateZ(150px); background-image: url('img/saae.jpg'); }
+    .face.back   { transform: rotateY(180deg) translateZ(150px); background-image: url('../img/saae3.jpg'); }
+    .face.right  { transform: rotateY( 90deg) translateZ(150px); background-image: url('../img/saae4.jpg'); }
+    .face.left   { transform: rotateY(-90deg) translateZ(150px); background-image: url('../img/saae5.jpg'); }
+    .face.top    { transform: rotateX( 90deg) translateZ(150px); background-image: url('../img/saae6.jpg'); }
+    .face.bottom { transform: rotateX(-90deg) translateZ(150px); background-image: url('../img/saae7.jpg'); }
+/*	
+@keyframes spin {
+  from { transform: rotateX(0deg) rotateY(0deg); }
+  to   { transform: rotateX(360deg) rotateY(360deg); }
+}
+*/
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 800px; /* Ajuste conforme necessário */
+  margin: 0 auto; /* Centraliza o vídeo na página */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.manifesto-container {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.manifesto-content {
+  display: flex;
+  flex-direction: column-reverse;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.manifesto-text {
+  padding: 20px;
+  flex: 1;
+}
+
+.manifesto-text h1 {
+  color: #b30000;
+  font-size: 1.8em;
+}
+
+.manifesto-text p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+.manifesto-image {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.manifesto-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .manifesto-content {
+    flex-direction: row;
+  }
+
+  .manifesto-text {
+    padding-right: 30px;
+  }
+
+  .manifesto-image {
+    padding: 20px;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #c0392b;
+  text-align: center;
+  margin-top: 20px;
+}
+h1.chamativo {
+  background-color: #FFEBCD;; /* SaddleBrown – marrom escuro acolhedor */
+  color: #C74141;           /* Cornsilk – tom claro e suave */
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  display: inline-block;
+}
+<style>
+.read-more-btn {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 1em;
+}
+.more-text {
+  /* display já iniciado como none no HTML */
+}
+</style>
+
+.title-a {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.title-c {
+  font-family: 'Cinzel',  sem serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color:#FF0000;
+   background-color: #FFEBCD;
+  
+}
+
+ <style>
+  .video-contain {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-contain iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* Efeito de escurecer */
+.video-contain:hover iframe {
+  filter: brightness(70%);
+}
+  
+</style>
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 15px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  text-align: center;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover .info {
+  transform: translateY(0);
+}
+ <style>
+  .video-contain {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-contain iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* Efeito de escurecer */
+.video-contain:hover iframe {
+  filter: brightness(70%);
+}
+  
+</style>
+
+/* Garante que figure não fique de largura total */
+.hover-figure {
+  display: inline-block !important; /* respeita o tamanho da imagem */
+  position: relative !important;    /* para o overlay ficar dentro */
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+}
+
+/* Imagem ocupa 100% do container */
+.hover-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Overlay escuro com texto */
+.hover-caption {
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 999; /* fica sobre a imagem */
+}
+
+/* Faz o texto aparecer só no hover */
+.hover-figure:hover .hover-caption {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hero:hover::after {
+  opacity: 0;
+}
+
+.hero:hover .hero-img {
+  transform: scale(1.1);
+}
+
+.hero h1 {
+  transition: color 0.3s ease;
+}
+
+.hero a:hover h1 {
+  color: #ff0000; /* escolha a cor */
+}
+/* Container flexível */
+.posts-container {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha quando não cabe mais */
+  gap: 20px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+/* Cards */
+.post {
+  background: #fff;
+  width: calc(50% - 20px); /* dois cards lado a lado */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Links dentro de posts */
+.post a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagem ajusta ao tamanho */
+.post-image img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Título */
+.post-title {
+  text-align: center;
+  margin: 15px 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+/* HOVER */ 
+.post:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.post:hover .post-image img {
+  transform: scale(1.1);
+}
+
+.post:hover .post-title {
+  color: #007bff;
+}
+
+/* RESPONSIVIDADE */
+/* Em telas menores que 768px: um card por linha */
+@media (max-width: 768px) {
+  .post {
+    width: 100%;
+  }
+}
+/* grid de colunas */
+.tres-colunas {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 coluna por padrão */
+    gap: 20px;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+/* estilo das colunas */
+.coluna {
+    background: #ddd;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* telas médias (tablet e maiores): 2 colunas */
+@media (min-width: 600px) {
+    .tres-colunas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* telas grandes (desktop): 3 colunas */
+@media (min-width: 992px) {
+    .tres-colunas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Faz a imagem responsiva e centralizada */
+.image-wrapper {
+  width: 100%;
+  max-width: 1200px; /* ajuste conforme seu layout */
+  margin: 0 auto;   /* centraliza horizontal */
+  background-color: #000; /* fundo que aparece se a imagem não preencher */
+  text-align: center;
+  padding: 20px; /* opcional (espaço ao redor) */
+}
+
+/* A imagem em si */
+.main-ima {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  opacity: 0.7;                /* inicialmente um pouco opaca */
+  filter: blur(3px);           /* embaçada no início */
+  transition: opacity 0.4s ease, filter 0.4s ease; /* transição suave */
+}
+
+/* Ao passar o mouse sobre a imagem */
+.ima-wrapper:hover .main-ima {
+  opacity: 2;      /* totalmente opaca */
+  filter: blur(0); /* sem blur, nítida */
+}
+.citation-hover {
+	 
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.rem 2rem;
+  background: #DCDCDC;
+  border-left: 10px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Georgia', serif;
+  color: #333;
+  text-align: justify;
+  position: relative;
+  transition: all 0.5s ease; /* transição suave no hover */
+  cursor: pointer;
+  padding: 20px;
+  
+}
+
+/* Estilo normal do texto */
+.citation-hover p {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin: 0;
+  padding:10px;
+}
+
+/* Estilo do autor */
+.citation-hover footer {
+  margin-top: 0.7rem;
+  text-align: right;
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Efeito hover */
+.citation-hover:hover {
+  background: #fff; /* fundo mais claro ao hover */
+  border-left-color: #FF6347; /* muda a cor da borda */
+  transform: translateX(5px); /* leve movimento para a direita */
+  box-shadow: 0 16px 28px rgba(0, 0, 1, 1.15); /* sombra suave */
+}
+
+.citation-hover:hover p {
+  color: #1a1a1a; /* texto mais escuro ao hover */
+}
+
+.citation-hover:hover footer {
+  color: #1a3d7c; /* cor do autor modificada */
+}
+
+
+/*** Footer End ***/
+
+
+
