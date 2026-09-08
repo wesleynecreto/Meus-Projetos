@@ -1,0 +1,2892 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://www.sindsaae.org.br/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>SINDSAAE</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        <link href="./site_files/css2" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+
+        <link href="./site_files/css2(1)" rel="stylesheet">
+
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="./site_files/all.css">
+        <link href="./site_files/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="./site_files/animate.min.css" rel="stylesheet">
+        <link href="./site_files/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="./site_files/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="./site_files/style.css" rel="stylesheet">
+		 <link rel="stylesheet" href="./site_files/all.min.css">	
+		<link rel="stylesheet" href="./site_files/font-awesome.min.css">
+
+	
+		  <style>
+  .tabela-responsiva {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .tabela-responsiva th,
+  .tabela-responsiva td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .tabela-responsiva th {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .tabela-responsiva tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  .tabela-responsiva tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+</style>
+    
+<style>
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 48px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+.arrow:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+.left-arrow {
+  left: 20px;
+}
+.right-arrow {
+  right: 20px;
+}
+.video-style {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 2
+  0px;
+  border: 4px solid white;
+  background-color: black;
+}
+</style>
+<!-- ESTILO DO POPUP -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .popup-box {
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    max-width: 90%;
+    width: 360px;
+    position: relative;
+    animation: surgir 0.4s ease-out;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff3cd; /* amarelo suave */
+    color: #212529;
+  }
+
+  .fechar-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #212529;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .fechar-popup:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes surgir {
+    from { transform: scale(5.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  } 
+</style>
+
+ 
+  
+  
+  <!-- texto centralizado-->
+
+  <style>
+    .destaque {
+      display: flex;
+      align-items: center;
+      background-color: #ffe600;
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 40px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .destaque i {
+      margin-right: 15px;
+      color: #ff0000;
+      font-size: 30px;
+    }
+  </style>
+
+ <style>
+.destaque {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #ffe600;
+      padding: 20px 30px;
+      border-radius: 12px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      max-width: 600px;
+    }
+
+    .destaque i {
+      margin-right: 15px;
+      color: #ff0000;
+      font-size: 30px;
+    }
+
+    .texto {
+      flex: 1;
+    }
+  </style>
+  
+  <style>
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+ 
+ <style>
+  .fundo-fimdeano {
+    background-image: url('fimdeano.jpg');
+    background-size: cover;      /* cobre toda a div */
+    background-repeat: no-repeat; /* não repete */
+    background-position: center;  /* centraliza a imagem */
+  }
+</style>
+
+ <style>
+    /* Container de 3 colunas */
+    .grid-container {
+      display: grid; /* ativa o Grid Layout */
+      grid-template-columns: 1fr 1fr 1fr; /* 3 colunas iguais */
+      gap: 20px; /* espaço entre as colunas */
+      padding: 20px;
+    }
+
+    /* Estilo das colunas */
+    .grid-item {
+      background: #FAFAFA;
+      padding: 10px;
+      border:0,2px solid #ccc;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    /* Responsividade (em telas pequenas vira 1 coluna) */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr; /* 1 coluna no celular */
+      }
+    }
+  </style>
+  
+<style>
+/* Estilo padrão do parágrafo */
+p.text-hover {
+  color: #4F4F4F; /* cor normal (preto) */
+  text-align: justify; /* justificando */
+  transition: color 0.3s ease;
+}
+
+/* Quando passa o mouse */
+p.text-hover:hover {
+  color: #c0392b; /* vinho */
+  cursor: pointer; /* opcional */
+}
+</style>
+<style>
+    figure {
+        max-width: 600px;
+
+        margin: auto;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: auto; /* imagem responsiva */
+        display: block;
+    }
+    figcaption {
+        margin-top: 8px;
+        font-size: 16px;
+        color: #333;
+        font-style: italic;
+    }
+</style>
+ 
+ <style>
+  .con {
+    width: 100%;
+    max-width: 600px; /* largura máxima opcional */
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .con img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.4s ease;
+  }
+
+  .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .con:hover .img-hover {
+    opacity: 1;
+  }
+</style>
+
+
+  <!--
+  <script>
+  const cubo = document.getElementById('cubo');
+  let isDragging = false;
+  let startX, startY;
+  let currentX = 0, currentY = 0;
+
+  cubo.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.clientX;
+    startY = e.clientY;
+    cubo.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    cubo.style.cursor = 'grab';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const deltaX = e.clientX - startX;
+    const deltaY = e.clientY - startY;
+
+    currentX += deltaY * 0.5;
+    currentY += deltaX * 0.5;
+
+    cubo.style.transform = `rotateX(${currentX}deg) rotateY(${currentY}deg)`;
+
+    startX = e.clientX;
+    startY = e.clientY;
+  });
+</script>
+  -->
+  
+ <script src="./site_files/saved_resource" async="" crossorigin="anonymous"></script><script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.read-more-section').forEach(section => {
+    const btn = section.querySelector('.read-more-btn');
+    const more = section.querySelector('.more-text');
+
+    btn.addEventListener('click', () => {
+      const hidden = getComputedStyle(more).display === 'none';
+      more.style.display = hidden ? 'inline' : 'none';
+      btn.textContent = hidden ? 'Ler menos' : 'Continuar lendo';
+    });
+  });
+});
+</script>
+
+<style>
+.ar {
+    display: flex;
+    flex-wrap: wrap; /* empilha em telas pequenas */
+    gap: 20px;
+    align-items: center;
+  }
+
+  .co {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .co img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.4s ease;
+  }
+
+  .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .co:hover .img-hover {
+    opacity: 1;
+  }
+
+  .texto {
+    flex: 1;
+    font-family: Arial, sans-serif;
+  }
+
+  .texto h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.6rem;
+  }
+
+  .texto p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+</style>
+
+<style>
+  .carousel {
+    position: relative;
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slides img {
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .prev { left: 10px; }
+  .next { right: 10px; }
+</style>
+
+<style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_dialog{background:#525252b3;position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:700;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif) #fff no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:#0006;inset:0;min-height:100%;position:absolute;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba),to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:#fff 0 1px 1px -1px inset;color:#fff;font:700 14px Helvetica,sans-serif;text-overflow:ellipsis;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2),to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:700 12px Helvetica,sans-serif;margin:2px -12px;padding:2px 6px 3px;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:700;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4A4A4A;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4A4A4A;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v4/y2/r/onuUJj0tCqE.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+</style></head>
+
+
+
+    <body>
+	
+
+	<!-- POPUP 
+	
+<div id="popupAviso" class="popup-overlay">
+  <div class="popup-box text-center text-dark" style="background-image: url('URL_MARCA_TEXTO'); background-size: cover; background-position: center;">
+    -->
+    <!-- Alfinete vermelho no topo -->
+  
+  <img src="./site_files/drawing-pin-146214_640.png" alt="Alfinete vermelho" style="width: 40px; position: absolute; top: 10px; left: calc(50% - 20px); z-index: 10;">
+<!--
+    <button class="fechar-popup" onclick="document.getElementById('popupAviso').style.display='none'">
+      ✋ <span style="font-size: 16px; margin-left: 5px;">Fechar aba</span>
+    </button>
+
+    
+
+
+    <div style="font-size: 60px; margin-bottom:10px;"class="img-fluid rounded img-zoomin w-100">📢</div>
+	<h5 align="center"; style="color:#0000FF"class="img-fluid rounded img-zoomin w-100"><STRONG>ATENÇÃO SINDICALIZADOS</STRONG></h5>
+	
+	<p align="justify">A partir do dia 01 de Dezembro de 2025,  O SINDSAAE estará distribuindo os Panetones de fim de ano, a entrega será das 11 as 16 h, de segunda a sexta feira.</p>
+ <p align="justify">Os Panetones deverão ser retirados até o dia 19 de Dezembro, após esta data os Panetones que não forem retirados serão doados para instituições de caridade.</p>
+
+	<h5 align="center"; style="color:#C5443D"class="img-fluid rounded img-zoomin w-100"><strong>Feliz Natal e um Próspero Ano Novo!</strong></h5>
+	 </h5>
+	 -->
+	 <!--
+	 <h5 class="mb-3 fs-4"></h5>
+    <p class="fs-5"> </p> 
+	-->
+
+	<!--
+ <div class="table-responsive">
+    <table class="table table-bordered table-striped text-center">
+	
+      <thead class="table-primary">
+        <tr>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><h6 class="text-center mb-3">ECA<br> Dia 03/06   </h6></td>
+          <td><h6 class="text-center mb-3">ETE Central<br>  04/06  </h6></td>
+        </tr>
+        <tr>
+          <td><h6 class="text-center mb-3">  Terça Feira, a Partir das 12:00h  </h6></td>
+          
+        </tr>
+        <tr>
+          <td><h6 class="text-center mb-3">  Quarta 
+Feira, a partir das 12:00h</h6></td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  -->
+ 
+	 
+	
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script async="" defer="" crossorigin="anonymous" src="./site_files/sdk.js.download"></script>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+
+            <div class="container-fluid topbar bg-dark d-none d-lg-block">
+			
+                <div class="container px-0">
+				
+                    <div class="topbar-top d-flex justify-content-between flex-lg-wrap">
+					
+                        <div class="top-info flex-grow-0">
+                            <span class="rounded-circle btn-sm-square bg-primary me-2">
+                                <img src="./site_files/logo.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+								
+                            </span>
+                            <div class="pe-2 me-3 border-end border-white d-flex align-items-center">
+                                <p class="mb-0 text-white fs-6 fw-normal"> SINDSAAE</p>
+								
+                            </div>
+                            <div class="overflow-hidden" style="width: 735px;">
+                                <div id="note" class="ps-2">
+                                    
+                                    <p class="text-white mb-0 "> 
+									
+					PARTICIPE DAS MOBILIZAÇÕES DO SINDSAAE / TEL:  (12) 98884-0202
+                                 
+                             </p>             							 
+                       </div>
+					   
+                            </div>
+                        </div>
+										
+						
+						<div class="social-icons">
+						 <a href="https://www.facebook.com/web.facebook.com/profile.php?id=61572926857768" target="_blank" class="fa fa-facebook"></a>
+						
+  <a href="https://www.instagram.com/sindsaaejacarei/" class="instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.youtube.com/@SINDSAAE" class="youtube"><i class="fab fa-youtube"></i></a>
+  </div>
+<!--
+                        <div class="top-link flex-lg-wrap">
+                            <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> <span class="text-body"></span></i>
+                            <div class="d-flex icon">
+												
+                                <p class="mb-0 text-white me-2">teste</p>
+                                <a href="" class=""><i class="fab fa-facebook-f text-body link-hover"></i></a>
+                                <a href="" class=""><i class="fab fa-twitter text-body link-hover"></i></a>
+                                <a href="" class=""><i class="fab fa-instagram"></i></a>
+                                <a href="" class=""><i class="fab fa-youtube text-body link-hover"></i></a>
+                                <a href="" class=""><i class="fab fa-linkedin-in text-body link-hover"></i></a>
+                                <a href="" class=""><i class="fab fa-skype text-body link-hover"></i></a>
+                                <a href="" class=""><i class="fab fa-pinterest-p text-body link-hover"></i></a>
+                            </div>
+                        </div>
+						-->
+                    </div>
+                </div>
+            </div>
+			
+
+
+			 
+			
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="https://www.sindsaae.org.br/index.html" class="navbar-brand mt-3">
+                            <p class="text-primary display-6 mb-2" style="line-height: 0;"></p>
+                            <small class="text-body fw-normal" style="letter-spacing: 12px;"></small>
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary">
+							
+							
+							
+							</span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="https://www.sindsaae.org.br/index.html" class="nav-item nav-link active">Home</a>
+								<a href="https://www.sindsaae.org.br/img/inscri%C3%A7%C3%A3o-.pdf" class="nav-item nav-link"><strong>Seja sócio</strong></a>
+								<a href="https://www.sindsaae.org.br/diretoria.html" class="nav-item nav-link">Diretoria</a>
+								<a href="https://plantaocard.com.br/" class="nav-item nav-link">Plantão Card</a>
+								 <div class="nav-item dropdown">
+								        <a href="https://www.sindsaae.org.br/#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Informativo</a>
+                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+								        <a href="https://www.sindsaae.org.br/destaque2.html" class="dropdown-item"> Pauta Bomba</a>
+                                        <a href="https://www.sindsaae.org.br/img/ESTATUTO-SINDSAAE.pdf" class="dropdown-item">Estatuto</a>                                       
+                                        <a href="https://www.sindsaae.org.br/descongelou.html" class="dropdown-item">Descongelou </a>
+							    	</div>
+								</div>
+								
+								<a href="https://www.sindsaae.org.br/juridico.html" class="nav-item nav-link">Jurídico</a>
+                                <a href="https://www.sindsaae.org.br/404.html" class="nav-item nav-link"></a>
+								
+                                <div class="nav-item dropdown">
+								        <a href="https://www.sindsaae.org.br/#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blogue</a>
+                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                        <a href="https://www.sindsaae.org.br/lideranca.html" class="dropdown-item"> Liderança</a>
+                                        <a href="https://www.sindsaae.org.br/mobiliza.html" class="dropdown-item"> Mobilização</a>                                       
+                                        <a href="https://www.sindsaae.org.br/companheiro.html" class="dropdown-item">Companheirismo </a>
+                                    </div>
+                                </div>
+								<!--
+                                <a href="https://wa.me/+551239527981?text=%22%C3%89%20sempre%20um%20prazer%20falar%20com%20voc%C3%AA!%22" class="nav-item nav-link">Descongela Já</a>
+                         -->
+						   </div>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		
+	
+        <!-- Navbar End -->
+		
+		<div align="center">
+
+<section class="hero-img hero" id="carousel">
+
+    <img class="banner ativo" src="./site_files/veto.jpg" alt="Banner 1">
+    <!--
+    <img class="banner" src="img/site6x1.jpg" alt="Banner 2">
+
+<img class="banner" src="img/site6x1.jpg" alt="Banner 2">
+
+    <div class="hero-text">
+        <!-- textos opcionais -->
+   
+</section>
+</div>
+<br>
+
+ <footer style="text-align: center; padding: 2px 0; background:#FF6A6A; font-size: 14px;">  </footer>
+		
+		
+		
+		
+		 <div class="row space30"> <!-- row 1 begins -->
+      
+            <div class="col-md-4">
+           	<blockquote class="citation-hover">
+		
+    <!-- Coluna central com vídeo -->
+     <img src="./site_files/lado1.jpg" alt="Banner 1">
+  </blockquote>
+
+           </div>
+        <br><br>
+            <div class="col-md-4">
+           	<blockquote class="citation-hover">
+		<h2 align="center" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100" alt=""> Convocação geral dia 24 na Câmara Municipal </h2>
+    <!-- Coluna central com vídeo -->
+    <div style="flex: 2; display: flex; justify-content: center; align-items: center; height: 100%; background-color: orange;">
+      <video controls="" style="width: 80%; height: auto; max-height: 100%;">
+        <source src="img/andreanuenio.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+  </blockquote>
+
+           </div>
+		   
+                <div class="col-md-4">
+              	<blockquote class="citation-hover">
+                 <img src="./site_files/lado2.jpg" alt="Banner 1">
+                </blockquote>				
+            </div>
+        
+      </div> <!-- /row 1 -->
+		
+ <footer style="text-align: center; padding: 2px 0; background:#FF6A6A; font-size: 14px;">  </footer>
+		
+
+
+<h2 align="center" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100" alt="">SINDSAAE Participa do Ato 1° de Maio em Jacareí</h2>
+		<div class="latest-news-carousel owl-carousel owl-loaded owl-drag">
+		
+                    
+                    
+                   
+					 	
+
+	
+		 <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1610px, 0px, 0px); transition: all; width: 4830px;"><div class="owl-item cloned" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							<a href="https://www.sindsaae.org.br/lideranca.html" class="h4">
+                                <img src="./site_files/dia1m.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+							 <a href="lideranca.html" class="h4">liderança</a>
+                                </div>
+								-->
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							<a href="https://www.sindsaae.org.br/mobiliza.html" class="h4">
+                                <img src="./site_files/dia1m5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+                                <a href="mobiliza.html" class="h4">Mobilização</a>
+                               </div>
+							   -->
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							 <a href="https://www.sindsaae.org.br/companheiro.html" class="h4 ">
+                                <img src="./site_files/dia1m2.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+                                <a href="companheiro.html" class="h4 ">Companheirismo</a>
+                            </div>
+							-->
+					     </div>
+						</div></div><div class="owl-item cloned" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							 <a href="https://www.sindsaae.org.br/companheiro.html" class="h4 ">
+                                <img src="./site_files/dia1m6.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+                                <a href="companheiro.html" class="h4 ">este</a>
+                            </div>
+							-->
+					     </div>
+						</div></div><div class="owl-item active" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							<a href="https://www.sindsaae.org.br/lideranca.html" class="h4">
+                                <img src="./site_files/dia1m.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+							 <a href="lideranca.html" class="h4">liderança</a>
+                                </div>
+								-->
+                        </div>
+                    </div></div><div class="owl-item active" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							<a href="https://www.sindsaae.org.br/mobiliza.html" class="h4">
+                                <img src="./site_files/dia1m5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+                                <a href="mobiliza.html" class="h4">Mobilização</a>
+                               </div>
+							   -->
+                        </div>
+                    </div></div><div class="owl-item active" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							 <a href="https://www.sindsaae.org.br/companheiro.html" class="h4 ">
+                                <img src="./site_files/dia1m2.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+                                <a href="companheiro.html" class="h4 ">Companheirismo</a>
+                            </div>
+							-->
+					     </div>
+						</div></div><div class="owl-item active" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							 <a href="https://www.sindsaae.org.br/companheiro.html" class="h4 ">
+                                <img src="./site_files/dia1m6.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+                                <a href="companheiro.html" class="h4 ">este</a>
+                            </div>
+							-->
+					     </div>
+						</div></div><div class="owl-item cloned" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							<a href="https://www.sindsaae.org.br/lideranca.html" class="h4">
+                                <img src="./site_files/dia1m.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+							 <a href="lideranca.html" class="h4">liderança</a>
+                                </div>
+								-->
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							<a href="https://www.sindsaae.org.br/mobiliza.html" class="h4">
+                                <img src="./site_files/dia1m5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+                                <a href="mobiliza.html" class="h4">Mobilização</a>
+                               </div>
+							   -->
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							 <a href="https://www.sindsaae.org.br/companheiro.html" class="h4 ">
+                                <img src="./site_files/dia1m2.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+                                <a href="companheiro.html" class="h4 ">Companheirismo</a>
+                            </div>
+							-->
+					     </div>
+						</div></div><div class="owl-item cloned" style="width: 377.5px; margin-right: 25px;"><div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+							 <a href="https://www.sindsaae.org.br/companheiro.html" class="h4 ">
+                                <img src="./site_files/dia1m6.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+								</a>
+                            </div>
+							<!--
+                            <div class="d-flex flex-column p-4">
+                                <a href="companheiro.html" class="h4 ">este</a>
+                            </div>
+							-->
+					     </div>
+						</div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"><i class="bi bi-arrow-left"></i></div><div class="owl-next"><i class="bi bi-arrow-right"></i></div></div><div class="owl-dots disabled"><div class="owl-dot active"><span></span></div></div></div>	
+		 
+		 <br>
+		 <footer style="text-align: center; padding: 2px 0; background:#FF6A6A; font-size: 14px;">  </footer>
+<!--
+<blockquote class="citation-hover">
+ <img src="img/primeirodemaio.jpg" class="img-fluid rounded img-zoomin w-100" alt="Dinheiro pelo ralo"><br>
+</blockquote>
+
+<footer style="text-align: center; padding: 2px 0; background:#FF6A6A; font-size: 14px;">   
+</footer>
+-->
+ <div class="row space30"> <!-- row 1 begins -->
+      
+            <div class="col-md-4">
+              	
+    <blockquote class="citation-hover">
+   	 
+	
+	<h2 align="center" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100" alt=""> Campanha salarial 2026 </h2>
+<p class="text-hover">Nos dias 26/03/26 e 27/03/2026 o SINDSAAE realizou as assembleias da Campanha Salarial 2026,  na ECA e ETE Central ,onde foram apresentadas para  <strong>Categoria </strong> a contra proposta enviadas pelo  Prefeito Celso Florêncio, as quais foram  de , 5.4% de reajuste nos salários dos Servidores e 10% nos benefícios do vale alimentação (VA) e vale refeição (VR). Diante da defasagem salarial que se arrasta desde o último ano do mandato do governo Isaias Santana, a  <strong>Categoria </strong> aceitou a proposta enviada pelo prefeito, e cobrou que seja cumprida de imediato a Lei 226/2026, reposição imediata dos 583 dias congelados na pandemia, e que o retroativo, seja feito um cronograma de pagamento. Tendo em vista que foram enviadas outras propostas para serem discutidas e a Administração não deu nenhum parecer, a  <strong>Categoria </strong> exige que as negociações das demais pautas continuem.<br> Segue as demais pautas;<br></p>
+<p class="text-hover">
+1) Amortização de 12% referentes a perca salariais dos últimos quatro anos do governo Isaias Santana. <br>
+  
+ 2) Viabilizar a indicação de um servidor de carreira, efetivo, eleito pelos demais servidores  efetivos do SAAE, para compor o Conselho de Administração da Autarquia. <br>
+ 
+ 3)	Revisão Imediata da Reforma Administrativa  do governo Isaias Santana,  visando a inclusão de servidores ocupantes de cargos em vacância ( ativos e aposentados após a reforma ), quando da implantação da mesma.  <br>
+ 
+ 4) Revogação imediata da contribuição previdenciária (IPMJ) dos aposentados e pensionistas, sobre valores acima de três salários mínimos; retorno da referida contribuição apenas sobre os valores dos benefícios  excedentes ao teto do INSS.<br>
+
+ 5) Pagamento dos benefícios previdenciários (aposentadorias e pensões do IPMJ ), no último dia útil do mês, a exemplo do pagamento feito aos servidores ativos. <br>
+
+ 6) Conceder aos Aposentados e Pensionista do (IPMJ), cesta básica em espécie ou cartão (VR). <br>
+
+ 7) Conceder ajuda de custo, para pagamento de planos de saúde aos servidores da ativa , aposentados e pensionistas da Administração Direta e Indireta, conforme porcentagem, representado abaixo, do salário base da Prefeitura Municipal de Jacareí sendo:  <br>
+
+
+       A)   10% para servidores entre 18  à 30 anos de idade.
+       B)	20%  para servidores entre 31  à 40 anos de idade.
+       C)	30%  para servidores a partir de 41 anos de idade. 
+	   <br> <br>
+  No dia 30/03/2026 foi protocolado o ofício na Prefeitura e no SAAE. Informando a decisão da Categoria e pedindo  novas rodadas de negociações. Estamos no aguardo.             <br><br>
+
+     </p><h4 align="center"> Participem das nossas assembleias e mobilizações em busca de novas conquista.
+	   
+<p></p>
+</h4></blockquote>
+              	
+            </div>
+        <br><br>
+            <div class="col-md-4">
+            
+			<blockquote class="citation-hover">
+		<h2 align="center" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100" alt="">
+	<br>
+		SINDSAAE Participa do Ato 1° de Maio em Jacareí
+		
+		</h2>
+	<br>
+		
+<section style="display: flex; width: 100%; align-items: center; justify-content: center; height: 70vh; margin-top: 20px;background-img:#4682B4;">
+
+    <!-- Coluna esquerda com imagem 
+    <div style="
+      flex: 1;
+      height: 100%;
+      background-image: url('img/luta2026.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    "></div>
+	-->
+
+    <!-- Coluna central com vídeo -->
+    <div style="flex: 2; display: flex; justify-content: center; align-items: center; height: 100%; background-image: url(&#39;img/dia1.JPG&#39;);">
+      <video controls="" style="width: 80%; height: auto; max-height: 100%;">
+        <source src="img/deciodia1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+	  
+	  
+	  
+    </div>
+
+    <!-- Coluna direita com imagem 
+    <div style="
+      flex: 1;
+      height: 100%;
+      background-image: url('img/luta2026.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    "></div>
+	-->
+  </section>
+</blockquote>
+<br>
+<footer style="text-align: center; padding: 2px 0; background:#FF6A6A; font-size: 14px;">   
+</footer>
+<br>
+<blockquote class="citation-hover">
+ <img src="./site_files/andre.jpg" class="img-fluid rounded img-zoomin w-100" alt="Dinheiro pelo ralo"><br>
+</blockquote>
+		  <!--
+			  <blockquote class="citation-hover"align="Center">
+<h3 align="center" style="color: #c0392b;" ><br>
+Servidor sindicalize !!!&ensp;&ensp;<br>
+Juntos somos mais fortes!!!&ensp;&ensp;<br>
+Juntos somos mais Respeitados!!!<br></h3>
+</blockquote>
+-->
+
+           </div>
+       
+            <div class="col-md-4">
+              	
+				<blockquote class="citation-hover">
+    
+	
+	<h2 align="center" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100" alt=""> Campanha salarial 2026 <br>
+Proposta aprovada pela categoria em assembleia realizada no dia 4 de março de 2026<br></h2>
+<p class="text-hover">
+1) Reajuste de  9.43%  nos salários dos servidores de carreira do SAAE, a partir de 1 de 
+Março de 2026,  da seguinte forma: <br><br>
+ a) Repasse da inflação de Março/ 2025 à Fevereiro/ 2026  (Considerando a mesma   
+inflação de Janeiro de 2026 para o mês  de Fevereiro de 2026), ou seja:   3.43%  <br>
+ b)Aumento real de 3.00%%,  e mais 3.00%  de amortização das perdas de 12% , dos          
+últimos quatro anos do governo  Isaias Santana <br>
+ c) Elaboração de cronograma para pagamentos das perdas restantes (9%). <br><br>
+ 2) Reajuste do Vale Refeição (VR) para R$ 35,00. <br><br>
+ 3) Reajuste do Vale Alimentação (VA) para R$ 350,00.  <br><br>
+ 4) Aplicação imediata da Lei Complementar 226/2026; descongelamento dos anuênios, 
+planos de carreira, sexta parte e quinquênios, durante a pandemia da Covid (583 dias ).<br><br> 
+ 5) Viabilizar a indicação de um servidor de carreira, efetivo, eleito pelos demais 
+servidores efetivos do SAAE, para compor o Conselho de Administração da Autarquia. <br><br>
+ 6) Revisão Imediata da Reforma Administrativa do governo Isaias Santana, visando a 
+inclusão de servidores ocupantes de cargos em vacância ( ativos e aposentados após 
+a reforma ), quando da implantação da mesma. <br><br>
+ 7) Revogação imediata da contribuição previdenciária (IPMJ) dos aposentados e 
+pensionistas, sobre valores acima de três salários mínimos; retorno da referida 
+contribuição apenas sobre os valores dos benefícios excedentes ao teto do INSS. <br><br>
+ 8) Pagamento dos benefícios previdenciários (aposentadorias e pensões do IPMJ ), no 
+ultimo dia útil do mês, a exemplo do pagamento feito aos servidores ativos. <br><br>
+       10) Conceder aos Aposentados e Pensionistas do (IPMJ) , cesta básica ou  cartão.<br><br>
+  11)  Conceder ajuda de custo, para pagamento de planos de saúde aos servidores  da          
+ativa , aposentados e pensionistas da Administração Direta e Indireta, conforme   
+porcentagem do salário base da PMJ sendo: <br>
+       a) 10% para servidores entre 18  à 30 anos de idade. <br>
+            b) 20%  para servidores entre 31  à 40 anos de idade. <br>
+            c) 30%  para servidores a partir de 41 anos de idade.       
+ 
+</p>
+</blockquote>
+				
+            </div>
+        
+      </div> <!-- /row 1 -->
+ 
+
+
+		<footer style="text-align: center; padding: 2px 0; background:#FF6A6A; font-size: 14px;">   
+</footer>
+
+<!--
+<div class="bg-light p-4 rounded">
+<blockquote class="citation-hover">
+     
+	<h2 align="center"; style="color: #c0392b;" alt="">	Campanha Salarial 2026.<br>
+ </h2>
+ <br>
+ 
+<h4 align="center">Servidores (as ) Participem !!!<br>
+Juntos somos mais fortes!!!<br>
+Juntos somos mais respeitados!!! <h4>
+<br>
+
+<figure class="hover-figure">
+			 <img src="img/campanha2026.png" alt="Slogan da Página"class="img-fluid rounded img-zoomin w-100" >
+			 <figcaption class="hover-caption">
+			 VOÇÊ ESTÁ SENDO CONVOCADO!!!!!
+</figcaption>
+</figure>
+
+</blockquote>
+</DIV>
+-->
+
+		
+
+
+
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	  <!-- Features Start -->
+            
+		
+        <!-- Features End -->
+		
+        <!-- Modal Search End -->
+ <!--
+<section id="home" class="section">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="img/logo-frente.jpg" alt="" width="1100" height="200">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/logo-frente2.jpg" alt="" width="1100 height="200">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/BANERSIN12.jpg" alt="" width="1100 height="200">
+                </div>				
+            </div>           
+        </section>
+-->
+        <!-- Features Start -->
+   
+        <!-- Features End -->
+
+
+        <!-- Main Post Section Start -->
+		
+		
+		
+		
+         <div class="grid-container">
+    <div class="grid-item">
+	 <style>
+  .video-contain {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-contain iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* Efeito de escurecer */
+.video-contain:hover iframe {
+  filter: brightness(70%);
+}
+  </style>
+  <br>
+  <div class="video-contain">
+  <a href="https://www.sindsaae.org.br/descongelou.html">
+      <figure class="hover-figure">
+			 <img src="./site_files/descongela.jpg" alt="Slogan da Página" class="img-fluid rounded img-zoomin w-100">
+			 <figcaption class="hover-caption">
+			 VITÓRIA!!!!!
+</figcaption>
+</figure>
+</a></div><a href="https://www.sindsaae.org.br/descongelou.html">
+
+
+
+<br>
+<p class="text-hover">  No dia 12 de janeiro de 2026, o presidente Lula sancionou o Projeto de Lei 21/23, de autoria da <strong> Deputada Luciene Calvacante (PSOL)</strong>, aprovado pelo Congresso ,retomando os direitos aos benefícios ( anuênio, sexta parte,quinquênio e plano de carreira ), Congelados por  583 dias pelo desgoverno Bolsonaro , dranta a pandemia (março 2020 a dezembro 2021) Assim sendo, a lei retoma de forma imediata e retroativa  a progressão dos referidos  direitos congelados.</p>
+
+  <blockquote class="citation-hover">
+     <p>
+<strong> Ler mais &gt;&gt;&gt;</strong>
+ </p></blockquote>
+
+ </a>
+  <p></p>
+	
+	</div>
+	
+    <div class="grid-item">
+	<br>
+	 <a href="https://www.sindsaae.org.br/destaque2.html">
+	<div class="video-contain">
+<figure class="hover-figure">
+  <img src="./site_files/ralo.jpg" class="img-fluid rounded img-zoomin w-100" alt="Dinheiro pelo ralo"><br>
+  <figcaption class="hover-caption"> Enquanto o povo paga a conta,<br> o dinheiro pelo ralo 💸
+  Enquanto a cidade enfrenta dificuldades e o salário mínimo mal acompanha a inflação<br>VERGONHA SALARIO DOS VEREADORES: 17000 POR MêS
+    </figcaption>
+</figure>
+</div>
+
+	 </a><div class="bg-light p-4 rounded"><a href="https://www.sindsaae.org.br/destaque2.html">
+					   <p class="text-hover">
+                    Enquanto a cidade enfrenta dificuldades e o salário mínimo mal acompanha a inflação, nossos vereadores articulam um aumento salarial absurdo para si mesmos, pulando de R$ 10.000,00 para R$ 17.000,00 mensais! Isso representa um aumento chocante de 70% bancado com nosso imposto!
+                          </p>
+						  </a><blockquote class="citation-hover"><a href="https://www.sindsaae.org.br/destaque2.html">
+     </a><p><a href="https://www.sindsaae.org.br/destaque2.html">
+<strong> Ler mais &gt;&gt;&gt;</strong>
+
+						  
+						  </a>
+						     </p></blockquote></div>	
+	                          </div>
+							  
+							  
+	
+    <div class="grid-item">
+	<br>
+	<div class="bg-primary py-3">
+  <h2 class="text-white text-center mb-4">Fique por dentro</h2>
+<br>
+ 
+  
+  <div class="position-relative d-flex flex-column align-items-center">
+    <div class="arrow left-arrow" id="prevBtn">←</div>
+    <iframe id="youtubePlayer" class="video-style" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" src="./site_files/JTGPLR-5n4E.html"></iframe>
+    <div class="arrow right-arrow" id="nextBtn">→</div>
+    <div id="videoTitle" class="text-white mt-3 fs-5 text-center">Projeto descongela</div>
+  </div>
+</div>
+  </div>  </div>
+<footer style="text-align: center; padding: 2px 0; background:#FF6A6A; font-size: 14px;">   
+</footer>
+<br>
+
+
+
+<!--
+
+<div class="ar">
+  <div class="co">
+    <img src="img/agua.jpg" alt="Imagem Normal">
+    <img class="img-hover" src="img/andre1.jpg" alt="Imagem Hover">
+  </div>
+<br>
+  <div class="texto">
+    <h2>Título ao Lado</h2>
+    <p>
+      Aqui você pode colocar um texto explicativo, descrição do produto, ou qualquer
+      conteúdo que quiser ao lado da imagem. Em telas menores, o layout desce e
+      fica em coluna automaticamente.
+    </p>
+  </div>
+</div>
+<br>
+-->
+
+ <section class="tres-colunas">
+ 
+        <div class="coluna">
+
+		<div class="bg-light p-4 rounded">
+					   <h5 align="center" ;="" style="color: #c0392b;" alt="">	 
+			Parabéns Deputada Luciene Cavalcante e Senadora Dorinha !!!</h5>
+			<br>
+			 <p align="justify" style="color: #c0392b;">E obrigado por lutar pelos Servidores e acabar com essa maldade imposta pelo governo Bolsonaro e Paulo Guedes!!!
+<br>Agora Servidores prestem atenção  em que vão votar em 2026 . Votem em quem defende os Servidores Públicos e os Serviços Públicos .
+					 </p>
+					  
+					  
+					<div class="video-container">
+  <iframe src="./site_files/mEtu5nvuBt0.html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+  </iframe>
+
+					 
+					  </div> 
+					   </div>
+					    </div>
+						
+        <div class="coluna">
+		 <div class="bg-light p-4 rounded">
+					 <img src="./site_files/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+					 <h5 align="center" ;="" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100" alt="">	 
+					ATENÇÃO SINDICALIZADOS<br>
+APOSENTADOS e PENSIONISTAS
+					 </h5>
+					  <p align="justify">
+ Em virtude de mudanças no sistema de desconto nas folhas de pagamento, imposto pela resolução do Ministério da Previdência, a partir de 01 de janeiro de 2026, os médicos(as) associados ao nosso convênio médico, não poderão mais atender no sistema de cheque consulta, sendo que a partir desta data, as consultas ser pagas, no momento da prestação delas, ou, serão realizadas pelo sistema Plantão Card, com os médicos(as), nele credenciados, os Aposentados e Pensionistas SINDICALIZADOS, que tiverem interesse em adquirir o cartão Plantão Card , procure o SindSaae.
+ </p>
+ 			  <h4 align="center" ;="" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100" alt="">	
+			  Um abraço a todos! 
+			  </h4>					 
+					 </div>
+		</div>
+        <div class="coluna">
+		 <div class="bg-light p-4 rounded">
+					  <a href="https://web.facebook.com/permalink.php?story_fbid=pfbid0EUQ3FCWhzJ94ABWbrgtk9Ea7YwiSAnuYMqkGzVagmWxa3YpD7skRHV5WH6af6J1rl&amp;id=61572926857768&amp;__cft__[0]=AZWHNQh31kgkQf6ZkJ8PAKmLpkCWHFU_mpeGXHHj6TP1-NTWtaHHGfQvlwcGn6SVsV5ONPGqopTDYnX6sDihkIIwooO5FmiP2SLXwzI3sKv67uDVPsLIGoI4YT3OrrkyuNpDePyYPhRLvJbGQjF5cPla3cH-UraP2XorB1vOxJnFHw&amp;__tn__=%2CO%2CP-R">
+
+					   <h4 align="center" ;="" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100" alt="">Sindsaae e Coletivo dos Servidores Municipais !!! Na luta contra a PEC 32 !!
+#!!!! Não a REFORMA ADMINISTRATIVA!!#
+👊🏻👊🏻👊🏻 </h4>
+
+<br><br>
+				<img src="./site_files/reforma-outubro.jpg" class="img-fluid rounded img-zoomin w-100" alt="">	
+</a>
+				 </div>
+		          </div>
+		
+    </section>
+
+
+<footer style="text-align: center; padding: 2px 0; background:#FF6A6A; font-size: 14px;">   
+</footer>
+<div class="container-fluid py-5">
+		
+            <div class="container py-5">
+                <div class="row g-4">
+				
+                    <div class="col-lg-7 col-xl-8 mt-0">	
+					<div class="position-relative overflow-hidden rounded">
+					<div class="border-bottom py-3">
+                <!--     <a  class="display-4 text-dark mb-0 link-hover">O</a>				
+					 -->
+					 
+					
+					 
+					
+					
+					 
+					 <!--
+					 
+					 <div class="bg-light p-4 rounded">
+					  <img src="img/plantaocard.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+					  <br><br>
+					 <h2 align="center"; style="color: #c0392b;"class="img-fluid rounded img-zoomin w-100" alt="">	 
+					ATENÇÃO SINDICALIZADOS
+					 </H2>
+					  <p align="justify">
+					  A partir do dia 01 de Dezembro de 2025,  O SINDSAAE estará trabalhando em parceria com  a rede Plantão Card.
+					  </p>
+					   <p align="justify">
+Os Sindicalizados que tiverem interesse em adquirir o cartão, compareçam ao Sindsaae do dia 01 a 19 de Dezembro das 11 às 16h, para obterem maiores  informações com as representantes do Plantão Card
+ </P>
+                  <h4 align="center"; style="color: #c0392b;"class="img-fluid rounded img-zoomin w-100" alt="">	
+			  Um abraço a todos! 
+			  </h4>					 
+					 </div>
+					 <br>-->
+					 
+					
+					 
+					 <!--
+					 <div class="bg-light p-4 rounded">
+					  <h2 align="center"; style="color: #c0392b;"class="img-fluid rounded img-zoomin w-100" alt="">	 
+					Bomba relógio<br>
+					Pec 38 / 2025
+					 </h2>
+					  <div class="video-wrapper">
+  <div class="video-container">
+    <iframe
+    <source src="img/pec38.mp4" type="video/mp4">
+      title="Título do Vídeo"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+		  </div>
+					 <br>
+					 -->
+					 
+					
+					    <div class="bg-light p-4 rounded">
+			<img src="./site_files/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+			 <h2 align="center" ;="" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100" alt=""><strong>1 PESO , 2 MEDIDAS</strong></h2>
+			
+			 <p align="justify">  Inacreditável o modo como essa Administração do SAAE- Jacareí trata seus Servidores (as).
+					 No B.O. do dia 22/outubro saiu a portaria nº 267 de 17/outubro o afastamento sem remuneração pelo período de 2 anos, 
+					 para tratar de interesses particulares o Engenheiro João Paulo Murilo Macedo Fellipe Penha,
+					 O mesmo que estava envolvido na obra da Major Acácio Ferreira, essa obra que acarretou na demissão do Diretor de Operações Eduardo,
+					 e do mestre Saneamento Evandro ao qual  estavam apenas dando apoio a terceirizada que estava executando os trabalhos,
+					 e sendo o Sr. João  o engenheiro responsável pela Obra, e  <strong>PASMEM </strong>não sofreu nenhuma punição. 
+					 Mesmo respondendo a um novo P.A, o Sr. João Talvez o único servidor do SAAE- Jacareí, que conseguiu essa proeza,
+					 enquanto Nós <strong>meros</strong> Servidores, para pedir afastamento de 2 anos que muitas vezes é negado, e a única opção é pedir exoneração,
+					 e se estiver respondendo a um P.A, nem exoneração pode pedir que é negado, o mesmo consegue o tal afastamento mesmo respondendo 
+					 a um novo P.A.</p>
+<p align="justify">Infelizmente nosso Jurídico avaliou, e o SAAE tem essa prerrogativa de poder afasta-lo ou não.</p>
+<p align="justify">Mas fica a pergunta para o Presidente do SAAE-JACAREÍ, o que será que o Sr. João tem que o diferencia dos demais SERVIDORES (AS).</p>
+<h5 align="center" ;="" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100" alt="">!!!!!! Isso pode ser até LEGAL, mas é totalmente IMORAL !!!!!!!</h5>
+
+					  </div>
+					
+					  <br>
+					 <!--   
+					  <div class="bg-light p-4 rounded">
+				
+					 <div align="center">
+					 <div class="bg-light p-4 rounded">
+    <h2 align="center"; style="color: #c0392b;"class="img-fluid rounded img-zoomin w-100" alt=""><strong> ALERTA MÁXIMO!</strong><br> REFORMA ADMINISTRATIVA É ATAQUE BRUTAL! </h2>
+	<br>
+	<img src="img/outubronao.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+	<br><br><br>
+	<p align="justify">
+	Um brutal ataque contra a população e os servidores públicos está em andamento no Congresso Nacional.
+	É a famigerada REFORMA ADMINISTRATIVA, um projeto inimigo do povo!<br>
+
+O que eles querem roubar?<br>
+O projeto visa:<br>
+
+Retirar Direitos históricos.<br>
+
+Acabar com a ESTABILIDADE (que garante serviços públicos de qualidade, sem perseguição política).<br>
+
+Reduzir salários e precarizar carreiras.<br>
+
+Temos que BARRAR NAS RUAS esse desmonte!<br>
+
+<strong> A Luta que Vence!</strong><br>
+O caminho já está traçado! No último dia 21 de setembro, a força das ruas DERROTOU A PEC DA BANDIDAGEM. Faremos o mesmo ao nos somarmos a marcha dos servidores do dia 29/outubro contra essa reforma 
+<br>
+
+<h5 align="center"; style="color: #c0392b;">
+ CONVOCAÇÃO URGENTE!<br>
+O SINDSAAE e o COLETIVO SERVIDORES MUNICIPAIS chamam você para o ato que vai barrar esse retrocesso:
+</h5>
+<p align="justify">
+Quando:	Dia 24 de Outubro<br>
+Horário:	18h<br>
+Local:	Praça CONDE FRONTIM
+<br>
+SÓ A LUTA MUDA A VIDA! VAMOS JUNTOS!</p>
+
+<p align="justify"style="color: 	#0000FF;">
+ #ReformaAdministrativaNão<br>
+ #PEC32Não<br>
+ #ServiçoPúblico<br>
+ #EstabilidadeÉGarantia<br>
+ #LutaSindical<br>
+ #24Outubro<br>
+</p>
+</h5>
+	</p>
+
+</div></div>
+</div>
+-->	
+
+		<br>		 
+					  
+					  
+					   <div class="bg-light p-4 rounded">
+					  
+					  <div align="center">
+					 
+<img src="./site_files/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br>
+	</div>
+		
+	<div align="center">	
+	
+	 <h1><strong>Carta Aberta <br>
+Nova  Administração, Mais do Mesmo!</strong>
+   </h1>
+   <p align="justify">
+   No dia 22 de setembro de 2025, recebemos uma denúncia de Servidores (as) do SAAE Jacareí, relatando as condições de trabalho, onde na denúncia à vários indícios de perseguições e assédio moral, ameaças e até obrigatoriedade de compra de camisetas do SAAE para o desfile de 7 de setembro. Infelizmente muitos Servidores acreditaram  que com essa ( Nova Gestão), do prefeito Celso Florêncio, o SAAE teria mudanças em relação ao tratamento com os Servidores, " Mas Nada Mudou e Sim Continuou", como já era de se esperar as perseguições continuaram e os processos Administrativos aumentaram,  as exonerações  e pedidos de demissões triplicaram.
+<br><br>Diante de toda essa injustiça que vem sendo praticado nesses 9 meses de governo Celso Florêncio, o SindSaae não vai se calar e vai tomar as devidas providências. O SindSaae sempre está do lado do Servidores(as)  não aceita essa truculência por parte de uma gestão mal  qualificada, que acha com perseguições  vai intimidar e maltratar Servidores (as). Neste mesmo dia protocolamos um ofício com o presidente do SAAE, o Sr. Carlos Sepinho , para que possamos através do diálogo resolver essa situação que os Servidores (as), estão enfrentando.
+<br><br>Iremos informando a Categoria, os desdobramentos dessas denúncias.
+</p>
+
+<strong>
+Juntos somos mais Fortes!!
+Juntos Somos mais Respeitados !!<br>
+
+PARTICIPE DAS MOBILIZAÇÕES DO SINDSAAE
+   </strong>
+   
+   
+    </div> 
+			</div> 		  
+					  <br><br>
+					  
+					  
+					  
+					  <div class="bg-light p-4 rounded">
+					  <div align="center">
+					  
+					  <h1>
+					  
+					   <strong>Estamos a um passo do descongelamento do tempo de 
+serviço e demais benefícios que foram estagnados durante a 
+pandemia </strong><br><br>
+					  </h1>
+				<div align="center">
+<img src="./site_files/descongelar.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br><br>
+	</div>
+				
+					  
+					  <p align="justify">
+					  Entre Maio de 2020 e Dezembro de 2021, durante a pandemia do Covid, 
+foram congelados os anuênios, as licença prêmio, as progressões e 
+vantagens, dos servidores públicos, pela Lei Complementar 173, no governo 
+Bolsonaro e Paulo Guedes, como desculpa para os repasses de 
+compensação da pandemia. Prática muito comum entre os governantes que 
+se dedicam a privilegiar os já privilegiados, às custas do trabalhador e 
+trabalhadora.
+ <br>
+					  <br>
+Porém, após a luta de várias categorias do funcionalismo público, e seus 
+sindicatos, nas três esferas, municipal, estadual e federal, conseguimos a 
+aprovação, na câmara federal, da PLP 21/23, que garante o pagamento 
+retroativo da licença prêmio, dos anuênios e progressões, que foram 
+congelados. Agora, uma vez aprovada na câmara, segue para o senado, onde 
+ocorrerá o segundo “raund” da peleja, portanto, nós devemos continuar 
+pressionando, agora os senadores e senadoras, a aprovarem a PLP, e 
+acabarem com essa injustiça gerada pelo governo Bolsonaro e Paulo 
+Guedes. Daí companheiros(as), lembrem-se a quem vocês deram seus votos 
+para o senado, e entrem em suas plataformas digitais, exigindo que os 
+senadores(as) cumpram seu papel de ter uma prática que vá ao encontro dos 
+interesses do povo e desfazerem a impostura do congelamento de nossos 
+direitos.
+		 <br>
+					  <br>			  
+					  
+  </p><h5 align="center" ;="" style="color: #FF0000;">
+Juntos somos mais fortes, juntos somos mais respeitados
+</h5>
+
+					  <p></p>
+					  
+					 </div>
+					</div>
+					  <br>
+					  <br>
+					 
+					 
+					  <div class="bg-light p-4 rounded">
+					  <div align="center">
+					  
+					  <h1 class="chamativo">
+					  
+					   <strong>Integração</strong>
+					  </h1>
+					  <div align="center">
+<img src="./site_files/integrar.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br><br>
+	</div>
+					  
+					  <p align="justify">
+					  Na sexta feira, dia 25, estivemos presentes na integração junto a outras entidades sindicais, na sede do STIA-Sindicato dos Trabalhadores nas Industrias da Alimentação e Bebidas de São José dos Campos e Região, por convite desta entidade. Lá tivemos a oportunidade de contato com diretores deste e demais sindicatos, ainda, tendo a oportunidade de assistir à palestra sobre Conjuntura política, social e economia atual, que foi de grande valia para maior entendimento ao quê, os devaneios do presidente dos Estados Unidos possam conduzir a economia de nosso país. Integrações como essa são de grande importância, para que nós tenhamos a oportunidade de troca de experiências e conhecimento com as demais entidades sindicais, inclusive, podendo partilhar com os demais, não só os problemas vividos pelas outras categorias, como, também, deixa-los a par dos nossos, ampliando assim a noção de que, podemos ser trabalhadores de atividades distintas, porém, as necessidades são as mesmas, e uma vez as entidades se unindo, a luta se torna muito mais fortalecida.
+  </p><h5 align="center" ;="" style="color: #FF0000;">
+Juntos somos mais fortes, juntos somos mais respeitados
+</h5>
+
+					  <p></p>
+					  
+					 </div>
+					</div>
+					  <br>
+					  <br>
+					  
+					  <div class="bg-light p-4 rounded">
+					  <div align="center">				 			  
+					  				 					
+						
+<h1 class="chamativo">Um Pequeno Conto<br> Baseado na Realidade <br>
+<strong>João e Maria</strong></h1>
+
+<p align="justify">
+			Era uma vez, João e Maria, e João, era o patrão de Maria.  João, com suas aplicações, 
+muito faturaria, enquanto Maria, com dedicação o servia. Ela limpava, passava, 
+cozinhava, costurava, plantava, lavava, com muita alegria, e João, a ela, um salário 
+oferecia. E assim, para Maria, o aluguel de uma pequena casa, possível seria. 
+<br><br>
+	Porém, num determinado dia, João reclamou dos direitos de Maria, e disse que pagá-los, 
+muito lhe custaria. Então, falou a Maria, que o décimo terceiro e as férias, a ela não mais 
+pagaria. E Maria? Aceitou, porque, achava que vivia com alegria, e que João, um dia, seu 
+valor reconheceria. E algum tempo se passaria, e novamente, João a Maria reclamaria, 
+disse, com uma encenada agonia, que o salário dela, ainda o faliria, e por isso, só poderia 
+lhe pagar, metade do que ela recebia. Maria, mais uma vez, achando que um dia, a 
+alegria voltaria, a João, novamente se curvaria. Mas, perece ironia, após algum tempo, 
+João a Maria diria: “Com todo dinheiro que lhe pagaria, com suas finanças acabaria” E 
+então, ao invés da metade de seu salário, uma marmita lhe oferecia, em troca de tudo 
+que ela fazia. E Maria, como antes, sentindo pena de seu patrão, novamente, não lhe 
+disse não. E assim, ela, em troca de ninharia, para João tudo fazia: lavava, cozinhava, 
+passava, costurava, plantava; ela quase não dormia. Mas, mais algum tempo se passaria, e 
+novamente João, a ela reclamaria. Disse que Maria, muito comia, e que a partir daquele 
+dia, meia marmita lhe daria”   
+	<br><br>
+	Maria, já debilitada pela fome, a João obedecia, já que nesta época, sua casa já perdia, e 
+o galinheiro da mansão, João lhe oferecia. 
+<br><br>
+. De tanto trabalhar, Maria não via, que assim, de fome morreria. E algum tempo se 
+passaria, até que veio a morte de Maria.  
+<br><br>
+E nesse dia, finalmente João percebia. Sem Maria, quem o serviria?  Quem limparia? 
+Quem cozinharia? Quem plantaria? Quem costuraria? Quem passaria? Enfim, o que 
+faria para ter outra Maria? Nesse momento, João, aporrinhado se via. “Quem para ele 
+trabalharia, com tanta miséria que ele ofereceria?” 
+<br><br>
+Será que pagar um salário decente, teria? Com décimo terceiro, férias e fundo de 
+garantia? Não, isso ele não faria! Mesmo porque, só um miserável o serviria. Mas João, 
+logo se acalmaria, pois ele via, que o seu vizinho, como ele, a muitos exploraria.
+ E assim, a muitos empobreceria, e dessa maneira, outras Marias, para ele, o sistema ofereceria.
+ </p>
+										</div>
+										</div>
+
+<br>
+<br>
+										
+					
+					  <div class="bg-light p-4 rounded">
+					  
+					  <div align="center">
+<img src="./site_files/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br><br>
+	</div>
+		
+	<div align="center">
+	<h1 class="chamativo">SINDSAAE pelo Brasil    </h1>
+    </div> 
+	
+	<p align="jus">
+  <br>Nos últimos meses o que era sabido, porém, escamoteado, escancarou. A maioria dos políticos, principalmente no congresso 
+(mas não nos deixemos enganar, por aqui não é tão diferente) está do lado dos endinheirados. Fim da escala 6X1, para os trabalhadores (as),
+ nem pensar, mas para eles, no congresso, vale o 1X6, ou seja, para os trabalhadores é, trabalhar 6 dias e folgar 1, para os congressistas,
+ é “trabalhar” 1 e folgar 6, é isso mesmo, lá, o deputado, a deputada, têm a obrigação de comparecer ao plenário, apenas 1 vez na semana,
+ e ainda por cima, podem votar pelo celular, sem contar a “dinheirama” que queimam no processo, exemplo, 
+ o Sr. Hugo Motta com despesas maiores do que R$ 300.000,00 num mês, com direito a jatinho particular e tudo mais...
+ 
+  <span id="moreText" style="display:none;">
+    <br><br>Exigem controle de gastos do governo, mas somente no que diz respeito ao povo, claro, não ao povo em geral, ao povão,
+ pois a dita elite que se considera à parte do povo, que banca, muitas vezes, campanhas deste e daquele(A) candidato e candidata.,
+ não, pra estes(as) toda a dedicação. Algo histórico pode acontecer em nosso país, algo que jamais houve, algo que, ainda que acanhadamente,
+ pode se tornar o início do fim da desfaçatez, promiscuidade que se dá com as contas públicas. Muitos infelizmente não sabem,
+ que não são os gastos com saúde, educação, segurança, cultura, habitação, tecnologia, transportes, infraestrutura,
+ previdência, e etc, que comprometem o orçamento público, mas só um, o gasto com a dívida pública que há muito tempo
+ já deveria ter tido uma auditoria. Sim, quase metade de todo o dinheiro que este país arrecada vai para as mãos dos bancos,
+ para “pagar” os juros de uma dita dívida que só cresce e que, se submetida a auditoria,
+ provavelmente se mostrará ilegal em pelo menos 70% do seu valor. O Governo Federal, 
+ propôs a isenção de imposto de renda para quem ganha até R$ 5.000,00 reais por mês, esse valor beneficiaria até 95% da população do país, 
+ cuja os ganhos não ultrapassam esse valor e, para compensar, o governo propôs que pessoas que ganham muito, mas, muito acima disso,
+ ou seja, a partir de R$ 140.000,00 reais por mês, paguem imposto de 10% do valor, um imposto que eles nunca pagaram, e que nós,
+ o povão, pagamos. Dizem, os serviçais dos ricaços, que se esse imposto for acionado para eles, estes irão embora. Pra onde?
+ Os Estados Unidos, a terra dos bravos? Não, não vão, porque lá, a alíquota é de 37,5%, enquanto que, aqui, é 27,5%.
+ Enquanto lá, os juros que o país paga para os investidores em torno de 4,5% ao ano, aqui já se paga 15%. Eles(as) vão? 
+ Uma ova! É que são tão egoístas, preconceituosos, maldosos que, qualquer pessoa a qual eles considerem pobre,
+ demonstre algum tipo de alegria ou melhora lhes soa como ofensa, pois, na cabeça dessa gente, para eles se sentirem melhores, 
+ têm que existir os escravos (as). “Não vamos nos esquecer do que um dos seus mais obstinados defensores, o Paulo Guedes, 
+ que foi ministro do governo anterior disse em uma entrevista:” Empregada domestica ir pra Disney? “Se quiser viajar,
+ que vá lá pra terra do Roberto Carlos”.
+
+<br><br>Estamos em pleno século 21, mas essa gente, os endinheirados e endinheiradas sonham com apenas uma coisa,
+ a volta da escravidão – salvo raríssimas exceções. 
+
+<br><br>Portanto, o SINDSAAE está nessa luta, como não poderia deixar de ser, porque antes de tudo, é formado por trabalhadores (as),
+ não abastados, e representa trabalhadores(as) que sabem muito bem o que é ser do povão, 
+ principalmente como funcionários públicos de uma cidade que está entre as três maiores arrecadações do Vale,
+ que figura entre os 28 municípios com maior PIB do Estado mais rico da união, mas que, infelizmente, não reflete essa riqueza,
+ muito menos quando se diz respeito ao funcionalismo público, que sempre é deixado de lado.  
+
+<br><br>Vamos fazer um plebiscito, vamos mostrar a esses(as) congressistas traidores(as) que agora, 
+a população fará fazer valer o voto que deu, para ela, não para quem já tem tudo e quer muito mais. 
+  
+  </span>
+</p>
+<a href="javascript:void(0);" id="toggleLink" onclick="toggleText()">Continuar lendo</a>
+
+<script>
+function toggleText() {
+  const span = document.getElementById("moreText");
+  const link = document.getElementById("toggleLink");
+  if (span.style.display === "none") {
+    span.style.display = "inline";
+    link.textContent = "Ler menos";
+  } else {
+    span.style.display = "none";
+    link.textContent = "Continuar lendo";
+  }
+}
+</script>
+
+<br><br>
+ 
+
+  <h5 align="center" ;="" style="color: #FF0000;">FIM DA ESCALA 6X1<br><br>
+
+ISENÇÃO DE IMPOSTO DE RENDA PARA QUEM GANHA ATÉ R$ 5.000 POR MÊS<br><br>
+
+COBRANÇA DOS SUPER-RICOS <br><br>
+
+Que os 99% do povo brasileiro, realmente seja maior que o mísero 1%
+</h5>
+<p></p>
+</div>
+					 
+			        <hr>
+					 <hr style="border: 3px solid black;">
+					 <hr>
+					 
+					 
+					  <div class="bg-light p-4 rounded">
+					  <div align="center">
+					  	 					 			  
+					  <h1 class="chamativo">Matéria do Bom Dia Jacareí <br>
+                      Dia 02/07/2025</h1>
+
+
+
+
+<div class="read-more-section">
+  <p align="justify" ;="" style="color:#4F4F4F;">
+						Nessa dia, além de outras coisas, a edição tratou sobre a prestação de contas 
+do IPMJ, onde foi colocado que o instituto está com um déficit de R$ 1,4 
+bilhão de reais e, numa matéria rápida, como tem sido as coisas relacionadas 
+com o <strong>IPMJ,</strong> exemplo, a aprovação da PL 17/2025, que alterou o sistema de 
+formação dos conselhos do instituto, entre outras coisas, a toque de caixa, 
+mencionou que na sessão de câmara estavam presentes, aposentados e 
+representantes do Sindicato dos Servidores Públicos de Jacareí – <strong>STPMJ,</strong> 
+não citando que o <strong>SindSaae</strong> se fazia presente, através do Sr. Décio Moreira, 
+que faz parte da Diretoria da entidade. No entanto, no decorrer da matéria, 
+disse que na questão do desconto de 14% dos aposentados, tal ação teria 
+sido fruto de um acordo entre o prefeito Izaías e os sindicatos...
+						</p>
+    <span class="more-text" style="display: none;">
+	<h4 align="center" ;="" style="color:#FF4500"><strong> NÃO!!!</strong>
+					   </h4>
+					 <p align="justify" ;="" style="color:#4F4F4F;">
+					 Foi um acordo entre o então prefeito e os representantes do STPMJ, o 
+SindSaae, sempre se posicionou contrário a tal desconto, porque entende 
+que a situação do IPMJ não é fruto de ações dos aposentados, pensionistas, 
+ou  ativos, é fruto de utilização indevida dos recursos do instituto, por parte 
+dos prefeitos, que sempre se valeram do dinheiro do IPMJ, seja com 
+retirada do mesmo, ou o não repasse da prefeitura, renegociando suas 
+dívidas em extensas parcelas, descapitalizando assim o instituto. 
+<br><br>
+Num momento, não mencionam o SindSaae, noutro, o citam indiretamente, 
+como partícipe de um acordo o qual sempre se colocou contrário.
+<br><br>
+Somos a favor de um IPMJ saudável e bem gerido, portanto, ter como 
+caminho ser um fundo de “reserva” para as administrações, é algo o qual 
+nunca deveria ter ocorrido; ocorreu.  Isso, sem citar alguns investimentos 
+que foram feitos com o dinheiro do IPMJ, que deram com os burros n’água. 
+Agora, quem tem que pagar a conta, é quem sempre pagou? 
+<br>
+
+</p><h5 align="center" ;="" style="color:#c0392b;">
+Típico, eles(as), fazem lá em “cima”, o trabalhador(a) que já carrega a 
+pirâmide nas costas, é que fica com o boleto. <br><br>
+Até quando?
+	</h5>				 <p></p>
+	
+	
+	</span>
+  <p></p>
+  <button class="read-more-btn">Continuar lendo</button>
+</div>			
+					 
+					 </div>
+					  </div>
+					 <br>
+					 <br>
+										  
+					   <div class="bg-light p-4 rounded">
+					  <div align="center">
+					   <h1 class="chamativo">Reunião com o Prefeito 
+					   </h1>
+					    <br>
+	<div class="read-more-section">
+  								 
+					 <p align="justify" ;="" style="color:#4F4F4F;">
+Nós, o <strong>SindSaae</strong> e o <strong>STPMJ</strong>, nos reunimos com o Prefeito Celso 
+Florêncio na manhã desta sexta-feira, para discutirmos a respeito das pautas 
+Sociais de ambos os sindicatos. Dentro delas, ainda reivindicamos a 
+amortização das perdas salarias acumuladas na gestão anterior, e a solução 
+de problemas estruturais que afligem todos os setores da prefeitura, 
+incluindo o SAAE. Dentre os vários assuntos abordados foi colocado ao 
+prefeito o baixíssimo salário dos servidores, que, nos casos das faixas mais 
+baixas, estão no patamar do salário mínimo. Diante do que foi apontado 
+pela presidência do STPMJ e demais presentes na reunião, o prefeito se 
+comprometeu a estudar uma maneira de gerar um acréscimo nessas letras, 
+para elevá-las a valores superiores aos do salário mínimo. Nesse caso, 
+aproveitamos a oportunidade para reiterar ao prefeito que, nesse ato, 
+também leve em conta o caso dos cargos colocados em vacância, os quais 
+ficaram fora da reforma administrativa, podendo assim, eliminar esse grave 
+erro que ocorreu na reforma. O prefeito aceitou considerar o caso, pois, 
+devido ao fato do número de trabalhadores(as) que estão nessa condição não 
+ser alto, não geraria, assim, impacto significativo na folha de pagamento.
+</p>
+
+  <span class="more-text" style="display: none;" <br=""><br>
+  <p align="justify" ;="" style="color:#4F4F4F;">
+
+Ainda, em momento oportuno, apontamos uma das problemáticas 
+existentes no PL 17/2025, que mudou as regras dos conselhos do IPMJ, 
+onde, no caso da paridade, se gere dispositivo para que nenhum dos 
+membros constituintes do conselho, receba qualquer tipo de cargo 
+comissionado, ou mesmo FG, para que, assim, se mantenha a total 
+imparcialidade nas decisões. O prefeito manifestou que não vê nenhum 
+problema em se rever a questão, abrindo a possibilidade de termos êxito 
+nessa questão.  
+
+<br><br>
+
+Quanto à amortização das perdas, o prefeito alegou falta de recursos, 
+inclusive apontando que recebera a prefeitura em péssimas condições 
+financeiras. Porém, questionado sobre quais soluções estaria buscando para 
+a solução do problema, o mesmo apontou que estará encaminhando à 
+Câmara Municipal, projeto lei que permitirá ao executivo rever a questão da 
+cobrança de IPTU, onde, segundo ele, está defasado há anos, o que agravou 
+a situação. Ainda, citando o prefeito, uma vez feita a ação, já no ano que vem 
+poderá ser colocada em prática, aumentando assim a arrecadação, abrindo 
+caminho para a amortização das perdas salarias que estão na casa dos 12%. 
+Citou ainda que é sua intenção eliminar essa perda, até o fim de seu 
+mandato. 
+
+<br><br>
+
+Outro ponto abordado, foi o da ajuda de custo dos convênios 
+médicos contratados pelos servidores(as), cujos percentuais, propusemos na 
+pauta social, onde, tal caso, tem que passar pelo executivo devido á questão 
+da isonomia, ou seja, tratamento igual a todos os servidores, onde o prefeito 
+se mostrou disposto a estudar o benefício que, se oferecido em seu menor 
+valor, ou seja, 10% da mensalidade do convênio, por exemplo, ao final de 
+um ano, o beneficio terá propiciado uma mensalidade de ajuda de custo. 
+
+<br><br>
+Ao final da reunião, o prefeito se comprometeu em realizar mais uma 
+reunião num prazo de até 40 dias, para que se faça a avaliação dos resultados 
+obtidos com esta reunião. 
+
+<br><br>
+
+Portanto, a princípio, o prefeito se mostrou disposto a resolver essas 
+questões no tempo mais breve possível. De qualquer maneira, vamos estar 
+sempre acompanhando, tanto a administração, como o trabalhador(a), para 
+que consigamos o melhor para todos, população e funcionalismo público. 
+</p>
+		</span>
+  
+  <button class="read-more-btn">Continuar lendo</button>
+</div>		
+
+
+				
+					 </div>
+					  </div>
+					 <br><br>
+					 
+					 
+					 
+					 
+					 
+					  <div class="bg-light p-4 rounded">
+					  <div align="center">
+					  <h4 align="center" ;="" style="color:#FF4500"><strong>PEC 66/2023 </strong><br>
+Mais uma manobra das elites deste país,<br>para surrupiar o dinheiro dos trabalhadores. </h4>
+					 <img src="./site_files/saved_resource(1)" class="img-fluid rounded img-zoomin w-100" alt=""><br>
+					 <p align="justify" ;="" style="color:#4F4F4F;">Muitos, infelizmente,
+					 não sabem que cerca da metade de todo o dinheiro que é arrecadado 
+todos os anos no Brasil, é direcionado para os credores (bancos) da dívida pública de 
+Estados, Municípios e Federação. Uma dívida que, apesar de ter a determinação de sua 
+auditoria prevista na Constituição Federal, nunca ter existido. Uma dívida a qual pode 
+chegar a um percentual de ilegalidade da ordem de 70% de seu valor apontado. Se o país 
+arrecada em um ano, 4 trilhões de reais, quase 2 trilhões vão para os “credores”, o restante 
+é para tudo o mais, ou seja: educação; saúde, transporte, infra estrutura, pesquisa, habitação, 
+agricultura, previdência, e etc. De todas essas destinações, a Previdência é a que mais recebe 
+recursos e, apesar disso, todas essas áreas, principalmente a Previdência, ainda podem ser 
+submetidas à DRU (Desvinculação das Receitas da União) O que isso quer dizer? Esse 
+dispositivo ainda faculta às “autoridades” abocanharem 30% do valor destinado a cada uma 
+dessas áreas. <br><br>
+
+Ainda, e apesar disso, os magnatas querem mais. E de quem eles vão tirar? Claro, dos 
+trabalhadores e trabalhadoras desse país. Eles querem a outra metade pra eles, a qual está 
+nas áreas sociais descritas acima, a outra metade que eles chamam de gastos, porém, o 
+oceano de dinheiro que é direcionado para a dívida pública, e benefícios para eles, como 
+isenções de impostos para os magnatas, não são. O agronegócio que o diga, através da Lei 
+Kandir, que os isenta do ICMS nas exportações de seus produtos, cujo o valor tem que ser 
+reposto pela União aos estados, aí não é gasto, segundo os magnatas.
+<br><br>
+
+Ainda, e apesar disso, os magnatas querem mais. E de quem eles vão tirar? Claro, dos 
+trabalhadores e trabalhadoras desse país. Eles querem a outra metade pra eles, a qual está 
+nas áreas sociais descritas acima, a outra metade que eles chamam de gastos, porém, o 
+oceano de dinheiro que é direcionado para a dívida pública, e benefícios para eles, como 
+isenções de impostos para os magnatas, não são. O agronegócio que o diga, através da Lei 
+Kandir, que os isenta do ICMS nas exportações de seus produtos, cujo o valor tem que ser 
+reposto pela União aos estados, aí não é gasto, segundo os magnatas.
+<br>
+
+</p><h5 align="center" ;="" style="color:#FF4500">Diante disso, e a PEC 66/2023?</h5>
+
+
+<p align="justify" ;="" style="color:#4F4F4F;">
+A Previdência que tem um papel importantíssimo social, é um alvo “suculento” para o 
+mercado financeiro, então, na cabeça dos milionários parasitas desse país, deve ser sugada 
+até a medula e, a melhor maneira de fazer isso, é atacando as regras previdenciárias, 
+tornando cada vez mais difícil o trabalhador se aposentar, e prolongando o tempo de 
+contribuição, entre outras coisas.
+<br><br>
+
+A PEC 66, cujo o relator é o Deputado Baleia Rossi do MDB-SP, é mais uma maneira de 
+eles fazerem isso. E dessa vez o ataque é direcionado ao trabalhador público das três 
+esferas. A vontade é tão grande em se apoderar da Previdência, que mesmo a PEC sendo 
+inconstitucional, porque, como prevê o Art. 61 da Constituição Federal, só a Presidência da 
+República pode propor leis que disciplinem  a aposentadoria, e no caso da PEC 66, a 
+proposta partiu do Senado, ainda assim, ela está sendo tocada para frente. Se essa impostura 
+for aprovada no congresso,  cujo a maioria dos deputados(as) e senadores(as) são agentes 
+das elites, poderemos ver acontecer o seguinte:
+<br><br>
+
+ - A centralização das regras da aposentaria nas mãos do Governo Federal, ou seja, os 
+quesitos para se aposentar serem os mesmos da Previdência Federal. Sendo assim, pode se 
+dizer que os próprios Institutos de Previdência de cada estado e município, deixam de 
+existir, na prática. - O aumento da contribuição, que já é alta, para níveis superiores a 20%, no caso dos ativo
+<br><br>
+
+- O aumento da contribuição, que já é alta, para níveis superiores a 20%, no caso dos ativos 
+e, não só a manutenção da contribuição dos aposentados, como também, seu aumento. 
+<br><br>
+
+- O absurdo parcelamento das dívidas de estados e municípios para com seus Institutos de 
+Previdência, para até 25 anos, comprometendo o orçamento dos institutos. Como no caso 
+de Jacareí, onde todas as administrações, desde a criação do IPMJ, tiraram uma casquinha, 
+quando não pegando dinheiro do Instituto, não repassando sua parcela. 
+<br><br>
+
+- A redução do pagamento de precatórios, onde as pessoas que, através da justiça 
+conseguiram fazer valer seus direitos, demorarem muito mais para receberem seu dinheiro, 
+se o conseguirem antes de morrer.
+<br><br>
+
+A manobra está sendo tão intensa, que mesmo os governos estaduais e municipais, estão 
+engrossando essa ação de desmonte dos Institutos Previdenciários. Há poucos dias, tivemos 
+um exemplo em Jacareí, o IPMJ sofreu, de forma apressada, a modificação do seu 
+regimento, através do PLE 17, aprovado pela Câmara local que, além aumentar a 
+possibilidade de controle, por parte da administração, sobre o IPMJ, ainda pode jogá-lo nas 
+mãos de banqueiros, através de empréstimos consignados, os quais a “expertise” de bancos 
+será “necessária”
+</p>
+<br>
+
+<h5 align="center" ;="" style="color:#c0392b;">
+Todos sabemos qual é o principal objetivo dos bancos. </h5>
+</div>
+<br>
+
+ <strong>
+Portanto, nesse momento, tanto ativos, como aposentados, juntamente com sindicatos e 
+demais grupos de luta, devem se unir e enfrentar esse ataque, pois, se assim não for feito, 
+estaremos caminhando firmemente para o passado, onde a escravidão, era a ordem do dia. </strong><p></p>
+<br><br>
+					 </div>
+					<br><br> 
+					 
+					 
+				
+					 <br>
+					  <div class="bg-light p-4 rounded">
+					  <div align="center">
+					 <img src="./site_files/inimigosser.jpg" class="img-fluid rounded img-zoomin w-100" alt=""><br><br><br>
+					 <h6 align="justify" ;="" style="color:#4F4F4F;">Mais uma vez a câmara municipal de Jacarei, com a maioria de seus nobres Vereadores sendo ovelhinhas do prefeito Celso Florêncio, não respeitou o pedido do Sindsaae, Movimento Revoga Já e dos aposentados  para que o projeto simplesmente fosse adiado para uma melhor discussão e se justificando que fizeram 2 reuniões , votaram o projeto de lei 17/2025.
+<br>Aí SERVIDORES  são esses os nobres Vereadores  que sequer , quiseram nos dar a oportunidade de ter mais tempo para discutir o projeto 17/2025!!!!</h6>
+					 </div>
+	                 </div>
+					<br><br> 
+					
+					  <div class="bg-light p-4 rounded">
+					  <div align="center">
+<img src="./site_files/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br><br>
+	</div>
+		
+	
+	 <h2 align="center" ;="" style="color: #c0392b;">Pauta Social</h2>
+<h5 align="center" ;="" style="color: #0000FF;">Marcada Reunião para 12/06 com o Presidente do SAAE</h5>
+
+<p align="justify">
+
+<br>1- Interceder junto ao prefeito, para viabilizar a inclusão dos Servidores do SAAE, ocupantes em cargos de vacância, na reforma administrativa (aumento de referências)
+
+<br><br>2-	Negociar junto ao prefeito a criação de lei para a viabilização da indicação de 01 (um) servidor de carreira efetivo, para compor o conselho administrativo do SAAE, eleito pelos demais servidores efetivos.
+
+<br><br>3-	Reforçar a revogação da contribuição previdenciária (IPMJ) dos aposentados e pensionistas do SAAE, junto ao executivo, sobre os valores acima de três salários mínimos, com retorno da referida contribuição, apenas sobre os valores dos benefícios que excedem o teto do INSS.
+
+<br><br>4-	Disponibilizar áreas de descanso em todos os setores do SAAE, para os servidores, com ventilação, limpeza, equipamentos para recreação (Ex.: Tênis de Mesa, Pebolim) e iluminação, adequadas.  
+
+<br><br>5-	Viabilizar reunião quadrimestral entre os supervisores de cada setor e seus funcionários, 
+com a finalidade de proporcionar melhorias nos ambientes, e nas condições de trabalho, com participação,
+ opcional, por parte dos servidores, da entidade sindical e, também, reunião anual com a Presidência da Autarquia,
+ de uma comissão formada por trabalhadores (as) de todas as áreas do SAAE, com a finalidade de troca de informações e integração
+ entre a Autarquia e seus trabalhadores. Comissão esta constituída por um representante de cada área, escolhidos
+ pelos trabalhadores (as) de cada área. Em cada uma dessas reuniões, serão produzidas atas as quais serão entregues
+ para a entidade sindical, onde, através desta, será encaminhada para a Presidência do SAAE. 
+ 
+<br><br>6-	Conceder ajuda de custo para os trabalhadores (as) do SAAE, em relação ao pagamento dos planos de saúde, da ordem de: 
+ <br><br>10% para os funcionários com até 30 anos de idade.
+ <br><br>20% para os funcionários entre 31 e 40 anos de idade.
+<br><br> 30% para os funcionários a partir de 41 anos de idade.
+
+  </p><h5 align="center" ;="" style="color: #FF0000;">Juntos somos mais fortes<br> juntos somos mais respeitados!</h5>
+<p></p>
+</div>
+					 
+			        <hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 		 
+					 
+					 <!--
+					 <div class="bg-light p-4 rounded">
+					 <div align="center"">
+					 
+					 
+ <div class="table-responsive">
+    <table class="table table-bordered table-striped text-center">
+	 <img src="https://cdn.pixabay.com/photo/2013/07/12/12/46/drawing-pin-146214_640.png" alt="Alfinete vermelho" style="width: 40px; position: absolute; top: 10px; left: calc(50% - 20px); z-index: 10;">
+	 <h2 align="center"; style="color: #0000FF;">
+	
+	
+	Assembleia <BR>
+Discussão da Pauta Social
+</h2>
+	  <h5 align="justify">Dando andamento à agenda anual de ações, estaremos realizando assembleias,
+	  para apresentação da pauta social, e recebimento de mais propostas, por parte dos trabalhadores e trabalhadoras do SAAE 
+	  </h5>
+	  <h5 align="center"; style="color: #0000FF;">Datas</h5>
+      <thead class="table-primary">
+        <tr>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> <h5 align="center"; style="color: #0000FF;">ECA  </h5></td>
+          <td><h5 align="center"; style="color: #0000FF;">ETE    </h5></td>
+        </tr>
+        <tr>
+          <td><h5 align="center"; style="color: #0000FF;"> Dia 03/06 </h5></td>
+           <td><h5 align="center"; style="color: #0000FF;"> 04/06 </h5></td>
+        </tr>
+        <tr>
+          <td><h5 align="center"; style="color: #0000FF;"> Terça Feira, a Partir das 12:00h </h5></td>
+          <td><h5 align="center"; style="color: #0000FF;"> Quarta Feira, a partir das 12:00h</h5></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+	
+					 </div>
+					
+					 
+					 </div>
+					 -->
+					 				 
+					 
+					 <hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 
+					
+<!--					
+					  <div class="bg-light p-4 rounded">
+					  <h2 align="center"; style="color: #0000FF;">
+					 Ato Contra os Ataques à Nossa Aposentadoria<br>👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻
+					  </h2>
+					 <div class="manifesto-container">
+  <div class="manifesto-content">
+    <div class="manifesto-text">
+   
+      <p align="justify">Visando o combate aos insistentes ataques da administração pública ao IPMJ,
+	  às aposentadorias dos servidores através do confisco de 14% e,
+	  também, ao fato de o prefeito não ter dado continuidade às negociações da campanha salarial,
+	  o SindSaae, juntamente com outras instituições, estará participando de uma manifestação.</p>
+    
+      <p><strong>Convidamos todos os trabalhadores e trabalhadoras do SAAE a participarem.
+	  Lutemos pela defesa do IPMJ e pelo respeito da administração para conosco.</strong></p>
+	    <br>
+        <h5 align="center"; style="color: #FF0000;">Juntos somos mais fortes<br> juntos somos mais respeitados!</strong></h5>
+    </div>
+    <div class="manifesto-image">
+	<DIV ALIGN="CENTER">
+      <img src="img/atodia16.jpg">
+	  </DIV>
+    </div>
+  </div>
+  
+</div>
+ 
+					 
+					 </div>
+					
+					
+					 <hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 
+					 
+					 -->
+					 
+					  <div class="bg-light p-4 rounded">
+					   <h3 align="center" ;="" style="color: #c0392b;">
+					  O SINDSAAE é contra o PLE 17/2025.<br>
+       Que muda a estrutura e as regras dos conselhos Deliberativo, Fiscal e Comitê de Investimento!!<br>
+       Servidores fiquem atentos !!!!<br>
+       O IPMJ é nosso !!!!!<br>
+👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻👊🏻</h3>
+<br>
+
+<h1 align="center"><strong>O REVOGAÇO</strong> </h1>
+
+<div align="center">
+<img src="./site_files/revogaimg.jpg" alt="" style="max-width: 100%; width: 400px; border-radius: 8px; flex-shrink: 0;">
+<br><br>
+</div>
+Próximo de completar 3 anos da famigerada contra reforma da previdência do ex prefeito IZAIAS SANTANA que retirou
+ direitos e confiscou o salário dos aposentados(as), o atual prefeito CELSO FLORENCIO (PL) prepara um novo ataque.
+ Desta vez o alvo é a estrutura dos Conselhos Deliberativo e Fiscal.
+ Com essa segunda contra reforma, o prefeito busca:<br><br>
+ 
+_ Reduzir a quantidade de conselheiros, passando de 15 para 10;<br><br>
+
+_ Aumentar o número de representantes da administração, passando de 1 para 5<br><br>
+
+_ Diminuir a representatividade dos servidores(as) eleitos, passando de 10 para 5 
+(1 indicado pelo STPMJ, 1 indicado pelo SINDSAAE, 1 aposentado ou pensionista eleito, 1 servidor efetivo eleito, 
+1 servidor das autarquias ou câmara eleito):<br><br>
+
+
+_ Remunerar os conselheiros (as), criando uma despesa de aproximadamente 56 mil reais ao ano.<br><br>
+
+_ Além do projeto ser totalmente autoritário,pois não consulta os segurados(as), aumenta servidores(as) a despesa,
+sobretudo um instituto que apresenta déficit financeiro.<br><br>
+
+					 <div align="center">
+					 <h5>Juntos somos mais fortes, juntos somos mais&nbsp;respeitados.</h5>
+	  </div>
+   </div>
+  
+  
+
+					<hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 
+
+			<br>		 
+					  <div class="bg-light p-4 rounded">
+				
+					 <div align="center">
+    <h2 align="center" ;="" style="color: #c0392b;"> ESTAMOS DE OLHO</h2>
+  <div class="video-wrapper">
+  <div class="video-container">
+    <iframe src="./site_files/rNzdSA23M-M.html" title="Título do Vídeo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    </iframe>
+  </div>
+</div>
+			<br>		 
+  
+  
+  <br>
+<div align="justify">Pois é, galera, esse vídeo é uma prova de que se o povo se mobilizar, os traíras, vão se lembrar de suas promessas de campanha.
+<strong> "Pressão"</strong>, foi o que ele disse, pois é isso mesmo que tem que ser feito, pressiona-los, sessão após sessão, pressioná-los quando tiverem projetos de lei contrários ao povo, como o caso dos Rappers, que estão sendo discriminados, com uma lei sugerida por um vereador e aprovada pela Câmara, o povo, ao votar nessas pessoas, deu-lhes poder para ferrar o próprio povo. Sim, pressiona-los sessão após sessão, porque com o prefeito tendo 11 dos 13 vereadores em suas mãos, ele se torna um reizinho, que fará de Jacareí seu pequeno reino e, como num jardim de infância, brincará de ditador, com anuência da Casa que deveria equilibrar as coisas.
+</div>
+<br>
+<div align="center"> Querem atender ao "rei", sem ter incômodo nenhum, nos ferrar, e depois irem para suas casas brindarem com seus copos de whisky, o "sucesso" de sua agenda maléfica.<br><br>
+ A democracia foi sequestrada&nbsp;em&nbsp;Jacareí.
+ </div>
+					 </div>
+					 </div>
+					<hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 
+					 
+					 <div class="bg-light p-4 rounded">
+					  <div align="center">
+<img src="./site_files/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br><br>
+	</div>		 
+					 
+					 
+					 <h5 align="center"><strong> Uma verdadeira afronta aos Servidores Públicos aconteceu<br> ontem na Câmara Municipal</strong></h5> <br>
+					 <div align="justify">
+                     <img src="./site_files/camara16.jpg" class="img-fluid rounded img-zoomin w-100" alt="">					 
+					 <br>
+					 <br> O Projeto de Lei que propunha o aumento nos vencimentos — já rejeitado por unanimidade pela própria categoria — foi levado à votação sem qualquer consideração pelo apelo dos trabalhadores.
+					 <br> Mesmo com forte mobilização dos Servidores, que clamavam por diálogo e mais tempo para negociação, os vereadores submissos ao prefeito Celso Florêncio ignoraram completamente o pedido.
+					 <br> Agiram como meros fantoches, obedecendo cegamente aos interesses do Executivo, ao invés de cumprirem seu dever com a população que os elegeu.
+                     <br>Essa manobra política escancarada mostra o total desrespeito à vontade da categoria e escancara o teatro que é essa “representação” política local. Ao atropelar o processo e fechar as portas para uma possível melhora nos índices propostos, a Câmara deixou claro de que lado está — não é o do povo, nem dos servidores.
+					 </div> 
+					 </div>
+					 
+					<hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 
+					 
+					 <!--
+					 <div class="bg-light p-4 rounded">
+					 <div align="center">
+					
+					<img src="img/dia16.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+
+					 </div>
+					 </div>
+					 <hr>
+					 <hr style="border: 3px solid black;">
+					 <hr> 
+					 -->
+					 
+					 
+					
+					  <!--
+					 
+					 <div align="center">
+<img src="img/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br><br>
+	<h3><mark> <strong>Campanha salarial 2025</strong></mark></h3>
+</div>
+<strong><p align="justify">
+Após a assembleia do dia 02/04, onde a proposta do prefeito foi 
+rejeitada, estamos dando continuidade às negociações. Vamos 
+estar realizando assembleias na ECA e na ETE Central<br><br>
+
+  Nas assembleias estaremos passando os detalhes da Campanha 
+Salarial, onde será apresentada proposta de ação que poderemos 
+estar tomando para enfrentarmos a indiferença da administração, e 
+falando também sobre as novas diretrizes que determinarão nossas 
+assembleias futuras, o que, a categoria, por ser soberana, desde 
+que participe, decidirá
+</p>
+
+<!--
+<div class="container my-4">
+  <h2 class="text-center mb-3"><strong> Datas / Horários</strong></h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped text-center">
+	
+      <thead class="table-primary">
+        <tr>
+          <th><h3 class="text-center mb-3"><strong> ECA </strong></h3></th>
+          <th><h3 class="text-center mb-3"><strong>ETE Central</strong></h3> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><h4 class="text-center mb-3"><strong> Dia 14/04  </strong></h4></td>
+          <td><h4 class="text-center mb-3"><strong> Dia 15/04 </strong></h4></td>
+        </tr>
+        <tr>
+          <td><h5 class="text-center mb-3"><strong> Primeira chamada <br>11h30 </strong></h5></td>
+          <td><h5 class="text-center mb-3"><strong> Primeira chamada<br> 11h30 </strong></h5></td>
+        </tr>
+        <tr>
+          <td><h5 class="text-center mb-3"><strong>  Segunda chamada<br> 12h </strong></h5></td>
+          <td><h5 class="text-center mb-3"><strong>Segunda chamada<br> 12h </strong></h5></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+ <h5 class="text-center mb-3">
+ <mark><strong> Juntos, somos mais fortes!</strong> </mark>
+ <br><br>
+ <mark><strong>Juntos, somos mais respeitados!</strong></mark>
+</h5>
+
+</strong>
+			     		 
+					
+					 <hr>
+					 <hr style="border: 3px solid black;">
+					 <hr>
+			 		
+  <div class="bg-light p-4 rounded">
+					 <div align="justify">
+
+					 <img src="img/campsal2025b.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+					 </div>
+					 </div>
+					 
+					 
+					 <hr>
+					<hr style="border: 3px solid black;">
+					<hr>
+					
+					
+					 <div class="bg-light p-4 rounded">
+					 <div align="justify">
+
+
+<div align="center">
+<img src="img/jato.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+<br><br>
+	<h3><mark> Campanha salarial 2025</mark></h3>
+</div>
+					 O SINDSAAE iniciou a campanha salarial 2025, nos dias 24,25 e 26/02/2025, 
+					 fez as assembleias nos setores do SAAE, onde foram passados os índices de reajuste salarial,
+					 reajuste do Vale Alimentação (VA) e Vale Refeição (VR), que foram aprovados por unanimidade,
+					 pelos Trabalhadores(as) participantes das assembleias.<br><br>
+					 
+					 São:<br>
+<mark>1)</mark>	Reposição da Inflação de 4,50% (quatro e meio por cento) estimada de Janeiro de 2024 a Fevereiro de 2025.<br><br>
+<mark>2)</mark>	Melhoria no padrão salarial de 3,50% ( três e meio por cento).<br><br>
+<mark>3)</mark>	 2,00% (dois por cento) amortização das perdas acumuladas dos últimos quatro anos do governo Isaias (12,00%), 
+com possibilidade de no decorrer do ano, negociar mais algum valor.<br><br>
+<mark>4)</mark>	Fim do Confisco dos Aposentados e Pensionistas de 14,00% (quatorze por cento) do que recebem acima de 3 salários mínimos.<br><br>  
+</strong><br> 
+<div align="justify">
+Ass:. A Diretoria
+    </div>
+					 </div>
+					 </div>
+					 <hr>
+					<hr style="border: 3px solid black;">
+					<hr>
+					
+					-->
+					
+				
+ 		
+						</div>					
+					       </div>					                       
+                    </div>
+					
+					
+					
+                    <div class="col-lg-5 col-xl-4">
+					
+                       <div class="bg-light rounded p-4 pt-0">
+					   
+                            <div class="row g-4">
+ 
+							<br><br><br><br>
+							
+
+							
+							
+							
+							
+							<!-- Mostrador de Vídeos INÍCIO -->
+<!-- Mostrador de Vídeos INÍCIO -->
+<!--<div class="bg-primary py-3">
+  <h2 class="text-white text-center mb-4">Fique por dentro</h2>
+
+ 
+  
+  <div class="position-relative d-flex flex-column align-items-center">
+    <div class="arrow left-arrow" id="prevBtn">&#8592;</div>
+    <iframe id="youtubePlayer" class="video-style" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="arrow right-arrow" id="nextBtn">&#8594;</div>
+    <div id="videoTitle" class="text-white mt-3 fs-5 text-center"></div>
+  </div>
+</div>
+<!-- Mostrador de Vídeos FIM 
+                                <div class="cubo3d" id="cubo">
+  <div class="face front"></div>
+  <div class="face back"></div>
+  <div class="face right"></div>
+  <div class="face left"></div>
+  <div class="face top"></div>
+  <div class="face bottom"></div>
+  </div>
+  -->
+  
+   <div class="col-12">
+                                    <div class="d-flex flex-column">
+									<a href="https://www.sindsaae.org.br/CHAT.html">
+                                        <h3>INDICE</h3></a>
+										<!--
+                                        <p class="fs-5 mb-0"><i class="fa fa-clock"> 06 minute read</i> </p>
+                                        <p class="fs-5 mb-0"><i class="fa fa-eye"> 3.5k Views</i></p>
+										-->
+                                    </div>
+                                </div>
+  
+                               <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        
+                                            <div class="overflow-hidden rounded">
+											<a href="https://plantaocard.com.br/" class="h6">
+                                                <img src="./site_files/plantaocard.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                          </a>
+										  </div>
+
+                                       
+                                            <div class="features-content d-flex flex-column">
+											   <a href="https://plantaocard.com.br/" class="h6">Plantão Card</a>
+											   
+											   
+											   <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+									<div class="col-12">
+									ATENÇÃO SINDICALIZADOS
+					 
+					  <p align="justify">
+					  A partir do dia 01 de Dezembro de 2025,  O SINDSAAE estará trabalhando em parceria com  a rede Plantão Card.
+					  </p>
+					   <p align="justify">
+Os Sindicalizados que tiverem interesse em adquirir o cartão, compareçam ao Sindsaae do dia 01 a 19 de Dezembro das 11 às 16h, para obterem maiores  informações com as representantes do Plantão Card
+ </p>
+								</div>
+  
+								<br>
+                                <div class="col-12">
+                                    <div class="d-flex flex-column">
+									<a href="https://www.sindsaae.org.br/CHAT.html">
+                                        <h3>INDICE</h3></a>
+										<!--
+                                        <p class="fs-5 mb-0"><i class="fa fa-clock"> 06 minute read</i> </p>
+                                        <p class="fs-5 mb-0"><i class="fa fa-eye"> 3.5k Views</i></p>
+										-->
+                                    </div>
+                                </div>
+								
+								 <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											<a href="https://web.facebook.com/profile.php?id=61572926857768" class="h6">
+                                                
+												<img src="./site_files/vecteezy_3d-facebook-logo-icon-blue-color-png_9995711.png" class="img-zoomin img-fluid rounded w-100" alt="">
+                                           </a>
+										   </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+											   <a href="https://web.facebook.com/profile.php?id=61572926857768" class="h6">SINDSAAE</a>
+											   <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											<a href="https://wa.me/+5512988840202?text=%22%C3%89%20sempre%20um%20prazer%20falar%20com%20voc%C3%AA!%22" class="h6">
+                                                <img src="./site_files/whatsind.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                          </a>
+										  </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+											   <a href="https://wa.me/+5512988840202?text=%22%C3%89%20sempre%20um%20prazer%20falar%20com%20voc%C3%AA!%22" class="h6">WhatsApp</a>
+											   <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								
+								
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											<a href="https://www.sindsaae.org.br/img/ESTATUTO-SINDSAAE.pdf" "="" class="h6">
+                                                <img src="./site_files/estatuto.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                          </a>
+										  </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+											   <a href="https://www.sindsaae.org.br/img/ESTATUTO-SINDSAAE.pdf" class="h6">Estatuto</a>
+											   <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											<a href="https://www.sindsaae.org.br/historia.html" class="h6">
+                                                <img src="./site_files/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                          </a>
+										  </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="https://www.sindsaae.org.br/historia.html" class="h6">História do Sindicato</a>
+                                                 <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											<a href="https://www.sindsaae.org.br/img/listamedico.html" class="h6">
+                                                <img src="./site_files/convenio.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+												</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="https://www.sindsaae.org.br/img/listamedico.html" class="h6">Convênios (serviços médicos)</a>
+                                        <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											 <a href="https://www.sindsaae.org.br/img/Estatuto%20Atualizado%20L.C.64-23.10.07.pdf" class="h6">
+                                                <img src="./site_files/estatuto.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+												</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="https://www.sindsaae.org.br/img/Estatuto%20Atualizado%20L.C.64-23.10.07.pdf" class="h6">Estatuto dos Servidores Públicos
+Municipais de Jacareí ( Lei Complementar n°13 - 07/10/199 )</a>
+                                                  <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+											
+											      <a href="https://www.sindsaae.org.br/juridico.html">
+                                                <img src="./site_files/juridico.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+												</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="https://www.sindsaae.org.br/juridico.html" class="h6">Jurídico</a>
+                                                <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<hr>
+					<hr style="border: 3px solid black;">
+					<hr>
+					<div class="col-12">
+					<h3 align="center" ;="" style="color: #c0392b;" class="img-fluid rounded img-zoomin w-100">
+					Juntos somos mais Fortes!!</h3>
+					<img src="./site_files/dir-cursos.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+					
+					<p align="justify">
+					No dia 26 de Novembro, parte da Diretoria do SINDSAAE participou de cursos ministrados pelo IBEPS – (Formação Assessoria e Pesquisa), onde os mesmos foram de elevada importância, e trouxeram uma boa bagagem de conhecimento sobre a atual conjuntura política e sindical, que propiciará mais efetividade e atuação do Sindicato em nossas campanhas. Agradecemos aos companheiros Marquinhos e Gisele do Sindicato da Alimentação, que nos prestigiaram nesta nova fase de formação e conhecimento. Logo, o restante da Diretoria  estará participando de demais cursos que irão ocorrer.
+					</p>
+					</div>
+					<hr>
+					<hr style="border: 3px solid black;">
+					<hr>
+								
+								<div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="./site_files/dinheiro.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+								
+								
+								<div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="./site_files/revoga.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="https://www.sindsaae.org.br/revoga%C3%A7o.pdf" class="h6">Revogaço</a>
+                                                <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+															
+								<div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="./site_files/fiquesocio.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="https://www.sindsaae.org.br/img/inscri%C3%A7%C3%A3o.pdf" class="h6">Filie se ao SINDSAAE</a>
+                                                <!--
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+													-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+                                                
+												 
+												
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="./site_files/pec66.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2"></p>
+                                                                <a href="https://www.sindsaae.org.br/pec66.html" class="h6">Fiquemos atentos Pec 66</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> </small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                    </div>
+                                </div>
+								
+								
+                               
+                    </div>
+                  </div>
+                  
+        
+
+        
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="https://www.sindsaae.org.br/#"><i class="fas fa-copyright text-light me-2"></i>www.sindssae.com.br</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com/">HTML Codex</a> Distributed By <a href="https://themewagon.com/">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="https://www.sindsaae.org.br/#" class="btn btn-primary border-2 border-white rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="./site_files/jquery.min.js.download"></script>
+        <script src="./site_files/bootstrap.bundle.min.js.download"></script>
+        <script src="./site_files/easing.min.js.download"></script>
+        <script src="./site_files/waypoints.min.js.download"></script>
+        <script src="./site_files/owl.carousel.min.js.download"></script>
+
+        <!-- Template Javascript -->
+        <script src="./site_files/main.js.download"></script>
+		<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Carrossel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 5000); // Muda o slide a cada 5 segundos
+
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animação de fade-in para elementos quando entram na viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    });
+    </script>
+		
+<script>
+  const videos = [
+  
+  
+  {
+      src: "https://www.youtube.com/embed/JTGPLR-5n4E" ,
+      title: "Projeto descongela"
+    },
+  
+  {
+      src: "https://www.youtube.com/embed/nTy7Xr5B72s" ,
+      title: "Vergonha Nacional"
+    },
+  
+  {
+      src: "https://www.youtube.com/embed/yTeisoPrAIU" ,
+      title: "Pec 38 Bomba Relógio"
+    },
+  
+  
+  {
+      src: "https://www.youtube.com/embed/mhZFwGW4igs"  ,
+      title: "Nova Sede do SINDSAAE"
+    },
+  
+  {
+      src: "https://www.youtube.com/embed/U-AWLEOAjKU"  ,
+      title: "Ato dia 18/6 contra a PL 17/2025  "
+    },
+  
+  {
+      src: "https://www.youtube.com/embed/FWhnS89JqKw"  ,
+      title: "Pela renovação Chapa: 2 ADMAP "
+    },
+  
+  {
+      src: "https://www.youtube.com/embed/_QGGOp4A4Kc" ,
+      title: "PAUTA SOCIAL 2025"
+    },
+  
+    {
+      src: "https://www.youtube.com/embed/ysHSt1eHeCM",
+      title: "Proposta de aumento indecente"
+    },
+    {
+      src: "https://www.youtube.com/embed/G1PSJYblfAc",
+      title: "Não somos marionetes do sistema"
+    },
+    {
+      src: "https://www.youtube.com/embed/YEnH-X3cRzg",
+      title: "Aprendendo com o SINDSAAE"
+    },
+    {
+      src: "https://www.youtube.com/embed/glk-23zCePw",
+      title: "SINDSSAE por melhores salários"
+    }
+  ];
+
+  let current = 0;
+  const youtubePlayer = document.getElementById("youtubePlayer");
+  const videoTitle = document.getElementById("videoTitle");
+
+  function loadVideo(index) {
+    const video = videos[index];
+    youtubePlayer.src = video.src + "?autoplay=0";
+    videoTitle.textContent = video.title;
+  }
+
+  function changeVideo(direction) {
+    current = (direction === "next")
+      ? (current + 1) % videos.length
+      : (current - 1 + videos.length) % videos.length;
+    loadVideo(current);
+  }
+
+  loadVideo(current);
+
+  // Remover o manipulador de rolagem do mouse
+  // window.addEventListener("wheel", (e) => changeVideo(e.deltaY > 0 ? "next" : "prev"));
+
+  // Adicionar controle de tempo para evitar mudanças rápidas de vídeo
+  let lastScrollTime = 0;
+  window.addEventListener("wheel", (e) => {
+    const now = Date.now();
+    if (now - lastScrollTime < 500) return; // 500ms de intervalo
+    lastScrollTime = now;
+
+    // Se desejar manter a funcionalidade de mudar vídeo com a rolagem, descomente a linha abaixo
+    // changeVideo(e.deltaY > 0 ? "next" : "prev");
+  }, { passive: true });
+
+  let startX = null;
+  window.addEventListener("mousedown", (e) => startX = e.clientX);
+  window.addEventListener("mouseup", (e) => {
+    if (startX !== null) {
+      const deltaX = e.clientX - startX;
+      if (Math.abs(deltaX) > 50) changeVideo(deltaX > 0 ? "prev" : "next");
+      startX = null;
+    }
+  });
+
+  let touchStartX = null;
+  window.addEventListener("touchstart", (e) => touchStartX = e.touches[0].clientX);
+  window.addEventListener("touchend", (e) => {
+    const deltaX = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(deltaX) > 50) changeVideo(deltaX > 0 ? "prev" : "next");
+    touchStartX = null;
+  });
+
+  document.getElementById("prevBtn").addEventListener("click", () => changeVideo("prev"));
+  document.getElementById("nextBtn").addEventListener("click", () => changeVideo("next"));
+</script>
+
+<script>
+  const btn = document.getElementById("hamburger-btn");
+  const list = document.getElementById("nav-list");
+
+  btn.addEventListener("click", () => {
+    list.classList.toggle("active");
+  });
+</script>
+&lt;<script>
+
+let banners = document.querySelectorAll('.banner');
+let atual = 0;
+let intervalo;
+
+function trocarBanner() {
+
+    banners[atual].classList.remove('ativo');
+
+    atual++;
+
+    if (atual >= banners.length) {
+        atual = 0;
+    }
+
+    banners[atual].classList.add('ativo');
+}
+
+function iniciarCarousel() {
+    intervalo = setInterval(trocarBanner, 3000);
+}
+
+function pararCarousel() {
+    clearInterval(intervalo);
+}
+
+iniciarCarousel();
+
+const carousel = document.getElementById('carousel');
+
+carousel.addEventListener('mouseenter', pararCarousel);
+
+carousel.addEventListener('mouseleave', iniciarCarousel);
+
+</script>
+ <!--  
+
+-->
+
+
+
+</div></div></body></html>

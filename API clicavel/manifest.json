@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube QR Code Clicável (Teste)",
+  "version": "1.0",
+  "description": "Transforma QR Codes em vídeos do YouTube em links clicáveis.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["content.js"]
+    }
+  ]
+}
