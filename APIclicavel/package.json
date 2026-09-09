@@ -1,0 +1,20 @@
+{
+  "name": "apiclicavel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "content-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jimp": "^1.6.1",
+    "jsqr": "^1.4.0"
+  }
+}
