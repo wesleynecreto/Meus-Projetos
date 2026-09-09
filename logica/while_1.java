@@ -6,5 +6,10 @@ public class while_1 {
             System.out.println("Contador: " + contador);
             contador++;
         }
+        int numero = 5;
+        while (numero >= 1 ){
+            System.out.println("Numero: " + numero);
+            numero--;
+        }
     }
 }
